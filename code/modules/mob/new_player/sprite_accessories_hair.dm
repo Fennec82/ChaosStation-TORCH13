@@ -1905,16 +1905,14 @@
 	name = "Quill Mohawk"
 	icon_state = "vox_mohawk"
 
-/* CHOMPRemve Start
 /datum/sprite_accessory/hair/shadekin_hair_rivyr
 	name = "Rivyr Hair"
 	icon = 'icons/mob/human_face_vr.dmi'
 	icon_add = 'icons/mob/human_face_vr_add.dmi'
 	icon_state = "shadekin_rivyr"
-	ckeys_allowed = list("verysoft")
+//	ckeys_allowed = list("verysoft")
 	species_allowed = list(SPECIES_SHADEKIN, SPECIES_SHADEKIN_CREW)
 	gender = NEUTER
-*/// CHOMPRemove End
 
 /datum/sprite_accessory/hair/slicker
 	name = "Slicker"
