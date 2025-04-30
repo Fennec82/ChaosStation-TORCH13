@@ -1,0 +1,5 @@
+author: "Arrhythmia_V"
+delete-after: True
+changes:
+  - rscadd: "Brute repair surgery can now be done with a hemostat"
+  - rscadd: "Burn repair surgery can now be done with a FixOVein"
