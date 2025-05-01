@@ -1,0 +1,4 @@
+2025-05-01:
+  Arrhythmia_V:
+  - rscadd: Brute repair surgery can now be done with a hemostat
+  - rscadd: Burn repair surgery can now be done with a FixOVein
