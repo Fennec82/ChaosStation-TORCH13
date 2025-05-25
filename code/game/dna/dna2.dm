@@ -79,7 +79,6 @@ GLOBAL_LIST_EMPTY_TYPED(dna_genes_bad, /datum/gene/trait)
 	var/species = SPECIES_HUMAN
 	var/list/body_markings = list()
 	var/list/body_markings_genetic = list()
-	var/list/body_descriptors = null
 	var/list/genetic_modifiers = list() // Modifiers with the MODIFIER_GENETIC flag are saved.  Note that only the type is saved, not an instance.
 
 // Make a copy of this strand.
@@ -176,10 +175,10 @@ GLOBAL_LIST_EMPTY_TYPED(dna_genes_bad, /datum/gene/trait)
 		wing_style = wing_styles_list.Find(character.wing_style.type)
 
 	// Playerscale (This assumes list is sorted big->small)
-	var/size_multiplier = player_sizes_list.len // If fail to find, take smallest
-	for(var/N in player_sizes_list)
-		if(character.size_multiplier >= player_sizes_list[N])
-			size_multiplier = player_sizes_list.Find(N)
+	var/size_multiplier = GLOB.player_sizes_list.len // If fail to find, take smallest
+	for(var/N in GLOB.player_sizes_list)
+		if(character.size_multiplier >= GLOB.player_sizes_list[N])
+			size_multiplier = GLOB.player_sizes_list.Find(N)
 			break
 
 	// Technically custom_species is not part of the UI, but this place avoids merge problems.
@@ -191,12 +190,10 @@ GLOBAL_LIST_EMPTY_TYPED(dna_genes_bad, /datum/gene/trait)
 	src.offset_override = character.offset_override
 	src.synth_markings = character.synth_markings
 	src.custom_speech_bubble = character.custom_speech_bubble
-	// CHOMPEnable Start
 	src.species_sounds = character.species.species_sounds
 	src.gender_specific_species_sounds = character.species.gender_specific_species_sounds
 	src.species_sounds_male = character.species.species_sounds_male
 	src.species_sounds_female = character.species.species_sounds_female
-	// CHOMPEnable End
 	src.grad_style = character.grad_style
 	src.r_grad = character.r_grad
 	src.g_grad = character.g_grad
@@ -214,7 +211,7 @@ GLOBAL_LIST_EMPTY_TYPED(dna_genes_bad, /datum/gene/trait)
 	SetUIValueRange(DNA_UI_EAR_STYLE,             ear_style + 1,               ear_styles_list.len  + 1,  1)
 	SetUIValueRange(DNA_UI_EAR_SECONDARY_STYLE,	  ear_secondary_style + 1,     ear_styles_list.len  + 1,  1)
 	SetUIValueRange(DNA_UI_TAIL_STYLE,	          tail_style + 1,              tail_styles_list.len + 1,  1)
-	SetUIValueRange(DNA_UI_PLAYERSCALE,           size_multiplier,             player_sizes_list.len,     1)
+	SetUIValueRange(DNA_UI_PLAYERSCALE,           size_multiplier,             GLOB.player_sizes_list.len,     1)
 	SetUIValueRange(DNA_UI_WING_STYLE,            wing_style + 1,              wing_styles_list.len + 1,  1)
 
 	SetUIValueRange(DNA_UI_TAIL_R,    character.r_tail,    255,    1)
@@ -521,7 +518,6 @@ GLOBAL_LIST_EMPTY_TYPED(dna_genes_bad, /datum/gene/trait)
 	ResetSE()
 
 	unique_enzymes = md5(character.real_name)
-	reg_dna[unique_enzymes] = character.real_name
 
 #undef DNA_OFF_LOWERBOUND
 #undef DNA_OFF_UPPERBOUND

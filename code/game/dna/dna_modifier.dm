@@ -18,7 +18,6 @@
 	var/languages=null
 	var/list/flavor=null
 	var/gender = null
-	var/list/body_descriptors = null // Guess we'll keep null.
 	var/list/genetic_modifiers = list() // Modifiers with the MODIFIER_GENETIC flag are saved.  Note that only the type is saved, not an instance.
 
 /datum/dna2/record/proc/GetData()
@@ -48,8 +47,6 @@
 	newrecord.implant = implant
 	newrecord.flavor = flavor
 	newrecord.gender = gender
-	if(body_descriptors)
-		newrecord.body_descriptors = body_descriptors.Copy()
 	newrecord.genetic_modifiers = genetic_modifiers.Copy()
 	return newrecord
 
@@ -227,7 +224,7 @@
 		WC.forceMove(get_turf(src))
 		occupant = null
 	// Disconnect from our terminal
-	for(var/dirfind in cardinal)
+	for(var/dirfind in GLOB.cardinal)
 		var/obj/machinery/computer/scan_consolenew/console = locate(/obj/machinery/computer/scan_consolenew, get_step(src, dirfind))
 		if(console && console.connected == src)
 			console.connected = null
@@ -368,7 +365,7 @@
 		R.mydna.dna.ResetSE()
 		buffers[i+1]=R
 	// Traitgenes don't alter direction of computer as this scans for neighbour
-	for(var/dirfind in cardinal)
+	for(var/dirfind in GLOB.cardinal)
 		connected = locate(/obj/machinery/dna_scannernew, get_step(src, dirfind))
 		if(connected)
 			break
@@ -478,8 +475,8 @@
 		if(!allowed || (NOCLONE in WC.mutations) || !WC.dna)
 			occupantData["isViableSubject"] = 0
 		occupantData["health"] = WC.health
-		occupantData["maxHealth"] = WC.maxHealth
-		occupantData["minHealth"] = CONFIG_GET(number/health_threshold_dead)
+		occupantData["maxHealth"] = WC.getMaxHealth()
+		occupantData["minHealth"] = -(WC.getMaxHealth())
 		occupantData["uniqueEnzymes"] = WC.dna.unique_enzymes
 		occupantData["uniqueIdentity"] = WC.dna.uni_identity
 		occupantData["structuralEnzymes"] = WC.dna.struc_enzymes
@@ -617,7 +614,6 @@
 							var/mob/living/carbon/human/H = WC
 							databuf.mydna.dna.real_name = H.dna.real_name
 							databuf.mydna.gender = H.gender
-							databuf.mydna.body_descriptors = H.descriptors
 						buffers[bufferId] = databuf
 					return TRUE
 				if("clear")
