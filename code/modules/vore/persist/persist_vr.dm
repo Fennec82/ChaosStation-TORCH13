@@ -15,7 +15,7 @@
 
 // Handle people leaving due to round ending.
 /hook/roundend/proc/persist_locations()
-	for(var/mob/Player in human_mob_list)
+	for(var/mob/living/carbon/human/Player in human_mob_list)
 		if(!Player.mind || isnewplayer(Player))
 			continue // No mind we can do nothing, new players we care not for
 		else if(Player.stat == DEAD)
@@ -27,6 +27,9 @@
 			persist_interround_data(Player, using_map.spawnpoint_died)
 		else
 			var/turf/playerTurf = get_turf(Player)
+			if(!playerTurf)
+				log_debug("Player [Player.name] ([Player.ckey]) playing as [Player.species] was in nullspace at round end.")
+				continue
 			if(isAdminLevel(playerTurf.z))
 				// Evac'd - Next round they arrive on the shuttle.
 				persist_interround_data(Player, using_map.spawnpoint_left)
@@ -265,6 +268,6 @@
 
 	// If they still have the same character loaded, update prefs
 	if(H?.client?.prefs?.default_slot == slot)
-		var/datum/category_group/player_setup_category/vore_cat = H.client.prefs.player_setup.categories_by_name["VORE"]
-		var/datum/category_item/player_setup_item/vore/nif/nif_prefs = vore_cat.items_by_name["NIF Data"]
+		var/datum/category_group/player_setup_category/vore_cat = H.client.prefs.player_setup.categories_by_name["General"]
+		var/datum/category_item/player_setup_item/general/nif/nif_prefs = vore_cat.items_by_name["NIF Data"]
 		nif_prefs.load_character()
