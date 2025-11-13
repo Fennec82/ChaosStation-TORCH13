@@ -441,12 +441,12 @@
 	has_sleeper_light_indicator = TRUE
 	has_dead_sprite_overlay = FALSE
 
-//Medical into Crisis type merge
+//Medical into Crisis type merge //Chaosstation changes - Unmerge
 /datum/robot_sprite/surgical
-	module_type = "Crisis"
+	module_type = "Surgeon"
 
 /datum/robot_sprite/dogborg/surgical
-	module_type = "Crisis"
+	module_type = "Surgeon"
 
 //Added sprites
 /datum/robot_sprite/dogborg/crisis/vale2
