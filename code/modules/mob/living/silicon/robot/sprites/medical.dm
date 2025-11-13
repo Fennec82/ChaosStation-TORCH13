@@ -271,7 +271,7 @@
 // Tall sprites
 //CHOMPNote -- many of the lines in this is overriden in modular
 /datum/robot_sprite/dogborg/tall/surgical
-	module_type = "Crisis"
+	module_type = "Surgeon"
 	sprite_icon = 'icons/mob/robot/surgical_large.dmi'
 
 /datum/robot_sprite/dogborg/tall/surgical/do_equipment_glamour(var/obj/item/robot_module/module)
