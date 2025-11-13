@@ -50,7 +50,7 @@ GLOBAL_VAR(custom_event_msg)
 
 // Used by robots and robot preferences for regular modules.
 GLOBAL_LIST_INIT(robot_module_types, list(
-	"Standard", "Engineering", /*"Surgeon",*/ "Crisis", "Miner",
+	"Standard", "Engineering", "Surgeon", "Crisis", "Miner",
 	"Janitor", "Service", "Clown", "Clerical", "Security",
 	"Research", "Command", "Exploration" //CHOMPedit: Enables Exploration borg.
 ))
