@@ -7,7 +7,7 @@ var/global/list/robot_modules = list(
 	"Research" 		= /obj/item/robot_module/robot/research,
 	"Miner" 		= /obj/item/robot_module/robot/miner,
 	"Crisis" 		= /obj/item/robot_module/robot/medical/crisis,
-//	"Surgeon" 		= /obj/item/robot_module/robot/medical/surgeon, // CHOMPedit: Surgeon module removal.
+	"Surgeon" 		= /obj/item/robot_module/robot/medical/surgeon, // CHOMPedit: Surgeon module removal. //Chaosstation edit - Re-added
 	"Security" 		= /obj/item/robot_module/robot/security/general,
 	"Combat" 		= /obj/item/robot_module/robot/security/combat,
 	"Exploration"	= /obj/item/robot_module/robot/exploration,
@@ -253,11 +253,12 @@ var/global/list/robot_modules = list(
 	pto_type = PTO_MEDICAL
 	supported_upgrades = list(/obj/item/borg/upgrade/restricted/bellycapupgrade)
 
-/* CHOMPedit start: Removal of Surgeon module. *
+// CHOMPedit start: Removal of Surgeon module. *
 //This is a constant back and forth debate. 11 years ago, the 'medical' borg was split into surgery and crisis.
 //Two years ago(?), they were combined into Crisis elsewhere and the idea seems to be well appreciated.
 //However, given this seems as though it will remain a hot topic for as long as SS13 exists, we are going to leave the surgeon module here in the event that we split them. Again.
 //This also goes for the sprite datums. It's be a lot of work to 'clear' them of having surgery in their path just to have to split them again in 2-3 years.
+//Chaosstation comment - We are re-enabling it now. Thanks for leaving this here
 /obj/item/robot_module/robot/medical/surgeon
 	name = "surgeon robot module"
 
@@ -327,7 +328,8 @@ var/global/list/robot_modules = list(
 
 	..()
 
-* CHOMPedit end: Removal of Surgeon module. */
+//* CHOMPedit end: Removal of Surgeon module.
+//Chaosstation - Ignore, we readded
 
 /obj/item/robot_module/robot/medical/crisis
 	name = "crisis robot module"
