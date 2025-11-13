@@ -189,7 +189,7 @@
 // Regular sprites
 
 /datum/robot_sprite/surgical
-	module_type = "Crisis"
+	module_type = "Surgeon"
 	sprite_icon = 'icons/mob/robot/surgical.dmi'
 
 /datum/robot_sprite/surgical/toiletbot
@@ -232,7 +232,7 @@
 // Wide/dogborg sprites
 
 /datum/robot_sprite/dogborg/surgical
-	module_type = "Crisis"
+	module_type = "Surgeon"
 	sprite_icon = 'icons/mob/robot/surgical_wide.dmi'
 
 /datum/robot_sprite/dogborg/surgical/do_equipment_glamour(var/obj/item/robot_module/module)
