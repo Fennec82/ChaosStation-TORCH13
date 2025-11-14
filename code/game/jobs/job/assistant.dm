@@ -128,7 +128,7 @@
 /datum/alt_title/server
 	title = JOB_ALT_SERVER
 	title_blurb = "A " + JOB_ALT_SERVER + " helps out kitchen and diner staff with various tasks, primarily food delivery. A " + JOB_ALT_SERVER + " has no real authority."
-	title_outfit = /decl/hierarchy/outfit/job/service/server
+	title_outfit = /decl/hierarchy/outfit/job/assistant/intern
 
 //Chaosstation changes start
 //Chaosstation addition - Vagabond
