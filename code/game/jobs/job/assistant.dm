@@ -135,7 +135,7 @@
 //Idea stolen from CEV Eris. A mechanics heavy version of assistant
 /datum/alt_title/vagabond
 	title = JOB_ALT_VAGABOND
-	title_blurb = "A " + JOB_ALT_VAGABOND + " is one of the remnants of a previous administration on the facility. " + JOB_ALT_VAGABOND + "s have no authority. The ID they wear is likely not even their own. They must forge their own path, and can expect varied help from the crew. OOC NOTE: " + JOB_ALT_VAGABOND + "is meant to be a mechanics heavy but still RP encouraging version of Assistant. Unlike Assistant, you have freedom to do whatever you want, but server rules on self-antagging and greytiding still apply!"
+	title_blurb = "A " + JOB_ALT_VAGABOND + " is one of the remnants of a previous administration on the facility. " + JOB_ALT_VAGABOND + "s have no authority. The ID they wear is likely not even their own. They must forge their own path, and can expect varied help from the crew. OOC NOTE: " + JOB_ALT_VAGABOND + " is meant to be a mechanics heavy but still RP encouraging version of Assistant. Unlike Assistant, you have freedom to do whatever you want, but server rules on self-antagging and greytiding still apply!"
 	title_outfit = /decl/hierarchy/outfit/job/assistant/intern
 //Chaosstation changes end
 
