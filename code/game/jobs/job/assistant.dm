@@ -130,11 +130,21 @@
 	title_blurb = "A " + JOB_ALT_SERVER + " helps out kitchen and diner staff with various tasks, primarily food delivery. A " + JOB_ALT_SERVER + " has no real authority."
 	title_outfit = /decl/hierarchy/outfit/job/service/server
 
+//Chaosstation changes start
+//Chaosstation addition - Vagabond
+//Idea stolen from CEV Eris. A mechanics heavy version of assistant
+/datum/alt_title/vagabond
+	title = JOB_ALT_VAGABOND
+	title_blurb = "A " + JOB_ALT_VAGABOND + " is one of the remnants of a previous administration on the facility. " + JOB_ALT_VAGABOND + "s have no authority. The ID they wear is likely not even their own. They must forge their own path, and can expect varied help from the crew. OOC NOTE: " + JOB_ALT_VAGABOND + "is meant to be a mechanics heavy but still RP encouraging version of Assistant. Unlike Assistant, you have freedom to do whatever you want, but server rules on self-antagging and greytiding still apply!"
+	title_outfit = /decl/hierarchy/outfit/job/service/server
+
+/* //Chaosstation removal - Change Intern to Assistant
 /datum/alt_title/assistant
 	title = JOB_ALT_ASSISTANT
 	title_blurb = "An " + JOB_ALT_ASSISTANT + " helps out wherever they might be needed. They have no authority, but can volunteer to help if help is needed."
 	title_outfit = /decl/hierarchy/outfit/job/service/server
-
+*/
+//Chaosstation changes end
 /datum/job/intern/New()
 	..()
 	if(config)
