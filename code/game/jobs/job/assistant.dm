@@ -84,9 +84,8 @@
 						JOB_ALT_JR_EXPLORER = /datum/alt_title/intern_exp, //CHOMP Explo keep
 						JOB_ALT_SERVER = /datum/alt_title/server,
 						JOB_ALT_ASSISTANT = /datum/alt_title/assistant)
-	job_description = "An " + JOB_INTERN + " does whatever is requested of them, often doing so in process of learning \
-						another job. Though they are part of the crew, they have no real authority."
-	timeoff_factor = 0 // Interns, noh
+	job_description = "An " + JOB_ALT_ASSISTANT + " helps out wherever they might be needed. They have no authority, but can volunteer to help if help is needed."
+	timeoff_factor = 0 // The life of a greyshirt is time off
 	requestable = FALSE
 
 /datum/alt_title/intern_eng
@@ -137,14 +136,13 @@
 	title = JOB_ALT_VAGABOND
 	title_blurb = "A " + JOB_ALT_VAGABOND + " is one of the remnants of a previous administration on the facility. " + JOB_ALT_VAGABOND + "s have no authority. The ID they wear is likely not even their own. They must forge their own path, and can expect varied help from the crew. OOC NOTE: " + JOB_ALT_VAGABOND + "is meant to be a mechanics heavy but still RP encouraging version of Assistant. Unlike Assistant, you have freedom to do whatever you want, but server rules on self-antagging and greytiding still apply!"
 	title_outfit = /decl/hierarchy/outfit/job/service/server
-
-/* //Chaosstation removal - Change Intern to Assistant
-/datum/alt_title/assistant
-	title = JOB_ALT_ASSISTANT
-	title_blurb = "An " + JOB_ALT_ASSISTANT + " helps out wherever they might be needed. They have no authority, but can volunteer to help if help is needed."
-	title_outfit = /decl/hierarchy/outfit/job/service/server
-*/
 //Chaosstation changes end
+
+/datum/alt_title/assistant //Chaosstation change - Switch assistant and intern
+	title = JOB_ALT_ASSISTANT
+	title_blurb = "An " + JOB_INTERN + " does whatever is requested of them, often doing so in process of learning another job. Though they are part of the crew, they have no real authority."
+	title_outfit = /decl/hierarchy/outfit/job/service/server
+
 /datum/job/intern/New()
 	..()
 	if(config)

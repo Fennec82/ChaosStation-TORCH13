@@ -73,13 +73,13 @@
 	#define JOB_ALT_JR_EXPLORER "Jr. Explorer" //CHOMP explo keep
 	#define JOB_ALT_SERVER "Server"
 	#define JOB_ALT_VAGABOND "Vagabond" // Chaosstation add - Vagabond
-/*	#define JOB_ALT_ASSISTANT "Assistant" //Chaosstation removal - Intern to Assistant
+	#define JOB_ALT_ASSISTANT "Intern"
 		//Assistant/Visitor/Whatever
-		#define JOB_ALT_TECHNICAL_ASSISTANT "Technical Assistant"
+		#define JOB_ALT_TECHNICAL_ASSISTANT "Technical Intern"
 		#define JOB_ALT_MEDICAL_INTERN "Medical Intern"
-		#define JOB_ALT_RESEARCH_ASSISTANT "Research Assistant"
+		#define JOB_ALT_RESEARCH_ASSISTANT "Research Intern"
 		#define JOB_ALT_VISITOR "Visitor"
-		#define JOB_ALT_RESIDENT "Resident" */
+		#define JOB_ALT_RESIDENT "Resident"
 //___________________________________________________________
 
 
