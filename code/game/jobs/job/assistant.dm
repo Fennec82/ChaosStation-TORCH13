@@ -142,7 +142,7 @@
 /datum/alt_title/assistant //Chaosstation change - Switch assistant and intern
 	title = JOB_ALT_ASSISTANT
 	title_blurb = "An " + JOB_INTERN + " does whatever is requested of them, often doing so in process of learning another job. Though they are part of the crew, they have no real authority."
-	title_outfit = /decl/hierarchy/outfit/job/service/server
+	title_outfit = /decl/hierarchy/outfit/job/assistant/intern
 
 /datum/job/intern/New()
 	..()
