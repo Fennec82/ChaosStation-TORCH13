@@ -76,7 +76,8 @@
 	access = list()			//See /datum/job/intern/get_access()
 	minimal_access = list()	//See /datum/job/intern/get_access()
 	outfit_type = /decl/hierarchy/outfit/job/assistant/intern
-	alt_titles = list(JOB_ALT_APPRENTICE_ENGINEER = /datum/alt_title/intern_eng,
+	alt_titles = list(JOB_ALT_VAGABOND = /datum/alt_title/vagabond,
+						JOB_ALT_APPRENTICE_ENGINEER = /datum/alt_title/intern_eng,
 						JOB_ALT_MEDICAL_INTERN = /datum/alt_title/intern_med,
 						JOB_ALT_LAB_ASSISTANT = /datum/alt_title/intern_sci, //CHOMPEdit
 						JOB_ALT_SECURITY_CADET = /datum/alt_title/intern_sec,
@@ -84,7 +85,7 @@
 						JOB_ALT_JR_EXPLORER = /datum/alt_title/intern_exp, //CHOMP Explo keep
 						JOB_ALT_SERVER = /datum/alt_title/server,
 						JOB_ALT_ASSISTANT = /datum/alt_title/assistant)
-	job_description = "An " + JOB_ALT_ASSISTANT + " helps out wherever they might be needed. They have no authority, but can volunteer to help if help is needed."
+	job_description = "An " + JOB_INTERN + " helps out wherever they might be needed. They have no authority, but can volunteer to help if help is needed."
 	timeoff_factor = 0 // The life of a greyshirt is time off
 	requestable = FALSE
 
