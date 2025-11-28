@@ -10,7 +10,7 @@ var/global/list/robot_modules = list(
 //	"Surgeon" 		= /obj/item/robot_module/robot/medical/surgeon, // CHOMPedit: Surgeon module removal.
 	"Security" 		= /obj/item/robot_module/robot/security/general,
 	"Combat" 		= /obj/item/robot_module/robot/security/combat,
-	"TEMS" 		    = /obj/item/robot_module/robot/security/combat/tems,
+	"TEMS" 		    = /obj/item/robot_module/robot/medical/combat,
 	"Exploration"	= /obj/item/robot_module/robot/exploration,
 	"Engineering"	= /obj/item/robot_module/robot/engineering,
 	"Janitor" 		= /obj/item/robot_module/robot/janitor,
@@ -877,13 +877,21 @@ var/global/list/robot_modules = list(
 
 //Chaosstation addition - TEMS Cyborg
 //This is meant to be an ERT version of the combat medic Syndicate cyborg
-/obj/item/robot_module/robot/security/combat/tems
+/obj/item/robot_module/robot/medical/combat
 	name = "TEMS robot module"
 	hide_on_manifest = TRUE
 
 
-/obj/item/robot_module/robot/security/combat/create_equipment(var/mob/living/silicon/robot/robot)
+/obj/item/robot_module/robot/medical/combat/create_equipment(var/mob/living/silicon/robot/robot)
 	..()
+	src.modules += new /obj/item/handcuffs/cyborg(src)
+	src.modules += new /obj/item/taperoll/medical(src)
+	src.modules += new /obj/item/gun/energy/robotic/disabler(src)
+	src.modules += new /obj/item/pickaxe/plasmacutter/borg(src)
+	src.modules += new /obj/item/melee/robotic/dagger(src)
+	src.modules += new /obj/item/borg/combat/shield(src)
+	src.modules += new /obj/item/borg/combat/mobility(src)
+	src.modules += new /obj/item/melee/robotic/borg_combat_shocker(src)
 	//General Medical
 	src.modules += new /obj/item/healthanalyzer/phasic(src)
 	src.modules += new /obj/item/reagent_containers/borghypo/merc(src)
@@ -905,6 +913,8 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/reagent_containers/dropper(src) // Allows borg to fix necrosis apparently
 	src.modules += new /obj/item/reagent_containers/syringe(src)
 	src.modules += new /obj/item/roller_holder(src)
+	//Emag
+	src.emag += new /obj/item/gun/energy/robotic/laser/rifle(src)
 	//Dogborg shit
 	src.modules += new /obj/item/dogborg/sleeper/K9/ert/medical(src)
 	src.modules += new /obj/item/dogborg/pounce(src)
