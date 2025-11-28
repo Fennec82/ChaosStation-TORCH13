@@ -10,6 +10,7 @@ var/global/list/robot_modules = list(
 //	"Surgeon" 		= /obj/item/robot_module/robot/medical/surgeon, // CHOMPedit: Surgeon module removal.
 	"Security" 		= /obj/item/robot_module/robot/security/general,
 	"Combat" 		= /obj/item/robot_module/robot/security/combat,
+	"TEMS" 		    = /obj/item/robot_module/robot/security/combat/tems,
 	"Exploration"	= /obj/item/robot_module/robot/exploration,
 	"Engineering"	= /obj/item/robot_module/robot/engineering,
 	"Janitor" 		= /obj/item/robot_module/robot/janitor,
@@ -873,6 +874,82 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/dogborg/sleeper/K9/ert(src)
 	src.modules += new /obj/item/dogborg/pounce(src)
 
+
+//Chaosstation addition - TEMS Cyborg
+//This is meant to be an ERT version of the combat medic Syndicate cyborg
+/obj/item/robot_module/robot/security/combat/tems
+	name = "TEMS robot module"
+	hide_on_manifest = TRUE
+
+
+/obj/item/robot_module/robot/security/combat/create_equipment(var/mob/living/silicon/robot/robot)
+	..()
+	src.modules += new /obj/item/handcuffs/cyborg(src)
+	src.modules += new /obj/item/taperoll/medical(src)
+	src.modules += new /obj/item/gun/energy/robotic/disabler(src)
+	src.modules += new /obj/item/pickaxe/plasmacutter/borg(src)
+	src.modules += new /obj/item/melee/robotic/dagger(src)
+	src.modules += new /obj/item/borg/combat/shield(src)
+	src.modules += new /obj/item/borg/combat/mobility(src)
+	src.modules += new /obj/item/melee/robotic/borg_combat_shocker(src)
+	//General Medical
+	src.modules += new /obj/item/healthanalyzer/phasic(src)
+	src.modules += new /obj/item/reagent_containers/borghypo/merc(src)
+	// Surgery things
+	src.modules += new /obj/item/autopsy_scanner(src)
+	src.modules += new /obj/item/surgical/scalpel/cyborg(src)
+	src.modules += new /obj/item/surgical/hemostat/cyborg(src)
+	src.modules += new /obj/item/surgical/retractor/cyborg(src)
+	src.modules += new /obj/item/surgical/cautery/cyborg(src)
+	src.modules += new /obj/item/surgical/bonegel/cyborg(src)
+	src.modules += new /obj/item/surgical/FixOVein/cyborg(src)
+	src.modules += new /obj/item/surgical/bonesetter/cyborg(src)
+	src.modules += new /obj/item/surgical/circular_saw/cyborg(src)
+	src.modules += new /obj/item/surgical/surgicaldrill/cyborg(src)
+	src.modules += new /obj/item/gripper/no_use/organ(src)
+	// General healing
+	src.modules += new /obj/item/gripper/medical(src)
+	src.modules += new /obj/item/shockpaddles/robot/combat(src)
+	src.modules += new /obj/item/reagent_containers/dropper(src) // Allows borg to fix necrosis apparently
+	src.modules += new /obj/item/reagent_containers/syringe(src)
+	src.modules += new /obj/item/roller_holder(src)
+	//Emag
+	src.emag += new /obj/item/gun/energy/robotic/laser/rifle(src)
+	//Dogborg shit
+	src.modules += new /obj/item/dogborg/sleeper/K9/ert/medical(src)
+	src.modules += new /obj/item/dogborg/pounce(src)
+
+	// Materials.
+	var/datum/matter_synth/medicine = new /datum/matter_synth/medicine(15000)
+	synths += medicine
+
+	var/obj/item/stack/medical/advanced/ointment/O = new /obj/item/stack/medical/advanced/ointment(src)
+	var/obj/item/stack/medical/advanced/bruise_pack/B = new /obj/item/stack/medical/advanced/bruise_pack(src)
+	var/obj/item/stack/medical/splint/S = new /obj/item/stack/medical/splint(src)
+	O.uses_charge = 1
+	O.charge_costs = list(1000)
+	O.synths = list(medicine)
+	B.uses_charge = 1
+	B.charge_costs = list(1000)
+	B.synths = list(medicine)
+	S.uses_charge = 1
+	S.charge_costs = list(1000)
+	S.synths = list(medicine)
+	src.modules += O
+	src.modules += B
+	src.modules += S
+
+/obj/item/robot_module/robot/syndicate/combat_medic/respawn_consumable(var/mob/living/silicon/robot/R, var/amount)
+
+	var/obj/item/reagent_containers/syringe/S = locate() in src.modules
+	if(S.mode == 2)
+		S.reagents.clear_reagents()
+		S.mode = initial(S.mode)
+		S.desc = initial(S.desc)
+		S.update_icon()
+	..()
+
+//Chaosstation end
 
 /* Drones */
 

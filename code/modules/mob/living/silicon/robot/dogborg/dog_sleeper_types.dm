@@ -196,3 +196,11 @@
 	max_item_count = 4
 	medsensor = FALSE
 	recycles = TRUE
+
+//Chaosstation addition - TEMS
+/obj/item/dogborg/sleeper/K9/ert/medical
+	name = "Emergency Treatment Sleeper"
+	desc = "A mounted sleeper unit for urgent surgical evacs."
+	icon_state = "sleeperert"
+	medsensor = TRUE
+	injection_chems = list(REAGENT_ID_HEALINGNANITES, REAGENT_ID_HYPERZINE, REAGENT_ID_TRAMADOL, REAGENT_ID_OXYCODONE, REAGENT_ID_SPACEACILLIN, REAGENT_ID_PERIDAXON, REAGENT_ID_OSTEODAXON, REAGENT_ID_MYELAMINE, REAGENT_ID_SYNTHBLOOD)
