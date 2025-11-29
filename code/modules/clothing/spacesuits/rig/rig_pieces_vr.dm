@@ -33,7 +33,7 @@
 		SPECIES_VOX 			= 'icons/inventory/suit/mob_vox.dmi',
 		SPECIES_TESHARI 		= 'icons/inventory/suit/mob_teshari.dmi',
 		SPECIES_ALTEVIAN 		= 'icons/inventory/suit/mob_vr_altevian.dmi',
-		SPECIES_SPARKLE 		= 'icons/inventory/head/mob_vr_vulpkanin.dmi' //Chaosstation edit - Sparkledogs can wear rigsuits
+		SPECIES_SPARKLE 		= 'icons/inventory/suit/mob_vr_vulpkanin.dmi' //Chaosstation edit - Sparkledogs can wear rigsuits
 		)
 /obj/item/clothing/head/helmet/space/rig
 	species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_TAJARAN, SPECIES_UNATHI, SPECIES_NEVREAN, SPECIES_AKULA, SPECIES_SERGAL, SPECIES_ZORREN_HIGH, SPECIES_VULPKANIN, SPECIES_PROMETHEAN, SPECIES_VOX, SPECIES_TESHARI, SPECIES_VASILISSAN, SPECIES_RAPALA, SPECIES_ALRAUNE, SPECIES_FENNEC, SPECIES_XENOHYBRID, SPECIES_ALTEVIAN, SPECIES_GREY_YW, SPECIES_SPARKLE) //YAWNEDIT (Adds Grey) //Chaosstation edit - Sparkledogs can wear rigsuits
