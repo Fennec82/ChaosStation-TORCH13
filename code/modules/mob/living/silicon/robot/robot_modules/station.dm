@@ -350,7 +350,7 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/gripper/medical(src)
 	src.modules += new /obj/item/shockpaddles/robot(src)
 	//Surgeon Modules below //Chaosstation changes - only enough for tend wounds
-//	src.modules += new /obj/item/autopsy_scanner(src)
+	src.modules += new /obj/item/autopsy_scanner(src)
 	src.modules += new /obj/item/surgical/scalpel/cyborg(src)
 	src.modules += new /obj/item/surgical/hemostat/cyborg(src)
 	src.modules += new /obj/item/surgical/retractor/cyborg(src)
