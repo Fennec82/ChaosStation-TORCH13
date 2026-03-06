@@ -1,7 +1,7 @@
 // Regular sprites
 
 /datum/robot_sprite/combat
-	module_type = "Combat"
+	module_type = list("Combat", "TEMS")
 	sprite_icon = 'icons/mob/robot/combat.dmi'
 
 /datum/robot_sprite/combat/default
@@ -66,7 +66,7 @@
 // Wide/dogborg sprites
 
 /datum/robot_sprite/dogborg/combat
-	module_type = "Combat"
+	module_type = list("Combat", "TEMS")
 /*	sprite_icon = 'icons/mob/robot/combat_wide.dmi'
 
 		// None yet
@@ -84,7 +84,7 @@
 // Tall sprites
 
 /datum/robot_sprite/dogborg/tall/combat
-	module_type = "Combat"
+	module_type = list("Combat", "TEMS")
 	sprite_icon = 'icons/mob/robot/combat_large.dmi'
 	has_custom_equipment_sprites = TRUE
 
@@ -196,7 +196,7 @@
 
 //Using our own category wide here not to interfere with upstream in case they add wide sprites under just dogborg.
 /datum/robot_sprite/dogborg/wide/combat
-	module_type = "Combat"
+	module_type = list("Combat", "TEMS")
 	has_custom_equipment_sprites = TRUE
 	has_eye_sprites = FALSE
 

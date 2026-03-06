@@ -56,7 +56,9 @@ GLOBAL_LIST_INIT(robot_module_types, list(
 ))
 // List of modules added during code red
 GLOBAL_LIST_INIT(emergency_module_types, list(
-	"Combat"
+	"Combat",
+	"TEMS"
+
 ))
 // List of modules available to AI shells
 GLOBAL_LIST_INIT(shell_module_types, list(
