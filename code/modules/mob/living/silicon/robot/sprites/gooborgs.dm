@@ -175,7 +175,7 @@
 	rest_sprite_options = list("Default", "Bellyup", "Sit")
 	belly_capacity_list = list("sleeper" = 2, "throat" =2)
 	sprite_flags = ROBOT_HAS_SHIELD_SPRITE | ROBOT_HAS_SPEED_SPRITE | ROBOT_HAS_DISABLER_SPRITE | ROBOT_HAS_TASER_SPRITE | ROBOT_HAS_LASER_SPRITE | ROBOT_HAS_MELEE_SPRITE //Baton
-	module_type = "Combat"
+	module_type = list("Combat", "TEMS")
 	icon_y = 64
 	vis_height = 64
 
