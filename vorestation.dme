@@ -3470,6 +3470,8 @@
 #include "code\modules\mob\living\silicon\robot\sprites\special_sprites\catborgs.dm"
 #include "code\modules\mob\living\silicon\robot\sprites\special_sprites\fluff.dm"
 #include "code\modules\mob\living\silicon\robot\sprites\special_sprites\gooborgs.dm"
+#include "code\modules\mob\living\silicon\robot\sprites\special_sprites\myomer_dogborg.dm"
+#include "code\modules\mob\living\silicon\robot\sprites\special_sprites\xenoborgs.dm"
 #include "code\modules\mob\living\silicon\robot\sprites\station\civilian.dm"
 #include "code\modules\mob\living\silicon\robot\sprites\station\command.dm"
 #include "code\modules\mob\living\silicon\robot\sprites\station\engineering.dm"
