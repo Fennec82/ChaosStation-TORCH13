@@ -4822,6 +4822,7 @@
 #include "maps\submaps\_helpers.dm"
 #include "maps\submaps\_readme.dm"
 #include "maps\virtual_reality\constructVR.dm"
+#include "modular_chaosstation\code\modules\vore\fluffstuff\custom_items_chaos.dm"
 #include "modular_chomp\code\global_tc.dm"
 #include "modular_chomp\code\__defines\_planes+layers.dm"
 #include "modular_chomp\code\_global_vars\list\names.dm"
