@@ -217,12 +217,12 @@
 /mob/living/simple_mob/vore/otie/security/phoron{
 	name = "Akara";
 	size_multiplier = 2;
-	desc = "A Ex-Deathsquad K9, veteran of several engagements against Eclipse, Black Hole cultists, and the Syndicate. In unofficial retirement after having her paw stepped on by a Durand. Beloved pet of the Special Operations Officer."
+	desc = "An Ex-Deathsquad K9, veteran of several engagements against Eclipse, Black Hole cultists, and the Syndicate. In unofficial retirement after having her paw stepped on by a Durand. Beloved pet of the Special Operations Officer."
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
-/area/centcom/creed)
+/area/centcom/specops)
 "aaC" = (
 /obj/effect/floor_decal/techfloor/corner{
 	dir = 5
