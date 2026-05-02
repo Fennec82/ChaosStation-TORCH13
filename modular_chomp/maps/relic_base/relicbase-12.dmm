@@ -139,11 +139,6 @@
 	icon_state = "steel"
 	},
 /area/centcom/command)
-"aas" = (
-/turf/unsimulated/floor{
-	icon_state = "steel"
-	},
-/area/centcom/specops)
 "aat" = (
 /mob/living/simple_mob/vore/otie/security/phoron{
 	name = "Akara"
@@ -41837,8 +41832,8 @@ qTn
 qTn
 qTn
 ugr
-aas
-aas
+qTn
+qTn
 aar
 oeT
 oeT
