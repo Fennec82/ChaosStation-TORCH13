@@ -152,6 +152,12 @@
 	icon_state = "steel"
 	},
 /area/centcom/specops)
+"aat" = (
+/mob/living/simple_mob/vore/otie/security/phoron{
+	name = "Akara"
+	},
+/turf/space,
+/area/space)
 "aau" = (
 /obj/machinery/floor_light,
 /obj/structure/window/reinforced{
@@ -207,6 +213,16 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/centcom/security)
+"aaB" = (
+/mob/living/simple_mob/vore/otie/security/phoron{
+	name = "Akara";
+	size_multiplier = 2;
+	desc = "A Ex-Deathsquad K9, veteran of several engagements against Eclipse, Black Hole cultists, and the Syndicate. In unofficial retirement after having her paw stepped on by a Durand. Beloved pet of the Special Operations Officer."
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/creed)
 "aaC" = (
 /obj/effect/floor_decal/techfloor/corner{
 	dir = 5
@@ -4670,6 +4686,12 @@
 /obj/item/rig/ert/assetprotection,
 /obj/item/rig/ert/assetprotection,
 /obj/item/rig/ert/assetprotection,
+/obj/item/rig/ert/assetprotection/deathsquad,
+/obj/item/rig/ert/assetprotection/deathsquad,
+/obj/item/rig/ert/assetprotection/deathsquad,
+/obj/item/rig/ert/assetprotection/deathsquad,
+/obj/item/rig/ert/assetprotection/deathsquad,
+/obj/item/rig/ert/assetprotection/deathsquad,
 /turf/simulated/floor/redgrid/off,
 /area/centcom/specops)
 "emn" = (
@@ -43368,7 +43390,7 @@ kNE
 nKE
 nKE
 nKE
-nKE
+aaB
 nKE
 nKE
 nKE
@@ -47738,7 +47760,7 @@ xUf
 xUf
 xUf
 xUf
-xUf
+aat
 xUf
 xUf
 xUf
