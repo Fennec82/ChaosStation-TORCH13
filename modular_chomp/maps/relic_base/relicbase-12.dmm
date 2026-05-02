@@ -90,14 +90,6 @@
 	icon_state = "asteroid"
 	},
 /area/skipjack_station)
-"aal" = (
-/obj/machinery/door/airlock/centcom{
-	name = "General Access";
-	req_access = list();
-	req_one_access = list()
-	},
-/turf/space,
-/area/centcom/command)
 "aam" = (
 /obj/machinery/vending/cigarette{
 	dir = 8
@@ -232,6 +224,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/centcom/security)
+"aaD" = (
+/turf/simulated/wall/tgmc/plain_redstripe_r,
+/area/centcom/command)
 "aaE" = (
 /obj/machinery/light{
 	dir = 4
@@ -41587,7 +41582,7 @@ qTn
 rJt
 rJt
 rJt
-spc
+aaD
 oeT
 oeT
 oeT
@@ -41854,7 +41849,7 @@ oeT
 oeT
 oeT
 oeT
-aal
+iPB
 oeT
 oeT
 nub
@@ -42089,7 +42084,7 @@ qTn
 qTn
 qTn
 qTn
-vFi
+qTn
 qTn
 tuj
 qTn
@@ -42101,7 +42096,7 @@ qTn
 rJt
 rJt
 rJt
-spc
+aaD
 oeT
 oeT
 oeT
