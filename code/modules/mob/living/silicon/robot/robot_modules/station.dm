@@ -360,12 +360,7 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/surgical/hemostat/cyborg(src)
 	src.modules += new /obj/item/surgical/retractor/cyborg(src)
 	src.modules += new /obj/item/surgical/cautery/cyborg(src)
-//	src.modules += new /obj/item/surgical/bonegel/cyborg(src)
 	src.modules += new /obj/item/surgical/FixOVein/cyborg(src)
-//	src.modules += new /obj/item/surgical/bonesetter/cyborg(src)
-//	src.modules += new /obj/item/surgical/circular_saw/cyborg(src)
-//	src.modules += new /obj/item/surgical/surgicaldrill/cyborg(src)
-//	src.modules += new /obj/item/surgical/bioregen/cyborg(src)
 	//Surgeon Modules End
 	src.modules += new /obj/item/inflatable_dispenser/robot(src)
 	src.modules += new /obj/item/holosign_creator/medical(src)
