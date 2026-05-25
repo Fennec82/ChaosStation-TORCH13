@@ -269,7 +269,14 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/sleevemate(src)
 	src.modules += new /obj/item/reagent_scanner/adv(src)
 	src.modules += new /obj/item/roller_holder(src)
-	src.modules += new /obj/item/reagent_containers/borghypo/surgeon(src)
+	src.modules += new /obj/item/reagent_containers/borghypo/crisis(src)
+	src.modules += new /obj/item/reagent_containers/glass/beaker/large/borg(src)
+	src.modules += new /obj/item/reagent_containers/dropper/industrial(src)
+	src.modules += new /obj/item/reagent_containers/syringe(src)
+	src.modules += new /obj/item/gripper/no_use/organ(src)
+	src.modules += new /obj/item/gripper/medical(src)
+	src.modules += new /obj/item/shockpaddles/robot(src)
+	//Surgeon Modules below
 	src.modules += new /obj/item/autopsy_scanner(src)
 	src.modules += new /obj/item/surgical/scalpel/cyborg(src)
 	src.modules += new /obj/item/surgical/hemostat/cyborg(src)
@@ -281,11 +288,9 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/surgical/circular_saw/cyborg(src)
 	src.modules += new /obj/item/surgical/surgicaldrill/cyborg(src)
 	src.modules += new /obj/item/surgical/bioregen/cyborg(src)
-	src.modules += new /obj/item/gripper/no_use/organ(src)
-	src.modules += new /obj/item/gripper/medical(src)
-	src.modules += new /obj/item/shockpaddles/robot(src)
-	src.modules += new /obj/item/reagent_containers/dropper(src) // Allows surgeon borg to fix necrosis
-	src.modules += new /obj/item/reagent_containers/syringe(src)
+	//Surgeon Modules End
+	src.modules += new /obj/item/inflatable_dispenser/robot(src)
+	src.modules += new /obj/item/holosign_creator/medical(src)
 
 	var/obj/item/reagent_containers/spray/PS = new /obj/item/reagent_containers/spray(src)
 
