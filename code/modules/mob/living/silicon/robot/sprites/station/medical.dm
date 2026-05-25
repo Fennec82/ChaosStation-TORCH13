@@ -5,7 +5,7 @@
 // Regular sprites
 
 /datum/robot_sprite/medical
-	module_type = list("Crisis", "Surgeon")
+	module_type = list("Paramedic", "Critical Care")
 	sprite_icon = 'icons/mob/robot/medical.dmi'
 
 /datum/robot_sprite/medical/default
@@ -85,7 +85,7 @@
 // Wide/dogborg sprites
 /*
 /datum/robot_sprite/dogborg/medical
-	module_type = list("Crisis", "Surgeon")
+	module_type = list("Paramedic", "Critical Care")
 	sprite_icon = 'icons/mob/robot/medical_wide.dmi'
 
 		// None yet
@@ -93,7 +93,7 @@
 // Tall sprites
 //CHOMPNote -- many of the lines in this is overriden in modular
 /datum/robot_sprite/dogborg/tall/medical
-	module_type = list("Crisis", "Surgeon")
+	module_type = list("Paramedic", "Critical Care")
 	sprite_icon = 'icons/mob/robot/medical_large.dmi'
 
 /datum/robot_sprite/dogborg/tall/medical/meka
@@ -189,7 +189,7 @@
 // Regular sprites
 
 /datum/robot_sprite/surgical
-	module_type = "Surgeon"
+	module_type = "Critical Care"
 	sprite_icon = 'icons/mob/robot/surgical.dmi'
 
 /datum/robot_sprite/surgical/toiletbot
@@ -232,7 +232,7 @@
 // Wide/dogborg sprites
 
 /datum/robot_sprite/dogborg/surgical
-	module_type = "Surgeon"
+	module_type = "Critical Care"
 	sprite_icon = 'icons/mob/robot/surgical_wide.dmi'
 
 /datum/robot_sprite/dogborg/surgical/do_equipment_glamour(var/obj/item/robot_module/module)
@@ -271,7 +271,7 @@
 // Tall sprites
 //CHOMPNote -- many of the lines in this is overriden in modular
 /datum/robot_sprite/dogborg/tall/surgical
-	module_type = "Surgeon"
+	module_type = "Critical Care"
 	sprite_icon = 'icons/mob/robot/surgical_large.dmi'
 
 /datum/robot_sprite/dogborg/tall/surgical/do_equipment_glamour(var/obj/item/robot_module/module)
@@ -300,7 +300,7 @@
 // Regular sprites
 
 /datum/robot_sprite/crisis
-	module_type = "Crisis"
+	module_type = "Paramedic"
 	sprite_icon = 'icons/mob/robot/crisis.dmi'
 
 /datum/robot_sprite/crisis/toiletbot
@@ -348,7 +348,7 @@
 // Wide/dogborg sprites
 
 /datum/robot_sprite/dogborg/crisis
-	module_type = "Crisis"
+	module_type = "Paramedic"
 	sprite_icon = 'icons/mob/robot/crisis_wide.dmi'
 
 /* //Handled by the normal belly code now.
@@ -409,7 +409,7 @@
 // Tall sprites
 
 /datum/robot_sprite/dogborg/tall/crisis
-	module_type = "Crisis"
+	module_type = "Paramedic"
 	sprite_icon = 'icons/mob/robot/crisis_large.dmi'
 
 /datum/robot_sprite/dogborg/tall/crisis/do_equipment_glamour(var/obj/item/robot_module/module)
@@ -443,10 +443,10 @@
 
 //Medical into Crisis type merge //Chaosstation changes - Unmerge
 /datum/robot_sprite/surgical
-	module_type = "Surgeon"
+	module_type = "Critical Care"
 
 /datum/robot_sprite/dogborg/surgical
-	module_type = "Surgeon"
+	module_type = "Critical Care"
 
 //Added sprites
 /datum/robot_sprite/dogborg/crisis/vale2
@@ -476,4 +476,34 @@
 	rest_sprite_options = list("Default", "Sit", "Bellyup")
 
 /datum/robot_sprite/dogborg/crisis/smolraptor/alt
+	sprite_icon_state = "smolraptor_alt"
+
+//Same thing but with surgeon module
+/datum/robot_sprite/dogborg/surgical/vale2
+	name = "Mediborg Model V-3"
+	sprite_icon = 'icons/mob/robot/widerobot/widerobot.dmi'
+	sprite_icon_state = "vale2"
+	sprite_hud_icon_state = "medihound"
+	has_eye_light_sprites = TRUE
+	has_sleeper_light_indicator = TRUE
+	rest_sprite_options = list("Default")
+
+/datum/robot_sprite/dogborg/surgical/cat
+	name = "Cat"
+	sprite_icon = 'icons/mob/robot/catborg_variant.dmi'
+	sprite_icon_state = "vixmed"
+	has_vore_belly_resting_sprites = TRUE
+	has_eye_light_sprites = TRUE
+	has_sleeper_light_indicator = TRUE
+
+/datum/robot_sprite/dogborg/surgical/smolraptor
+	sprite_icon = 'icons/mob/robot/smallraptors/smolraptor_med.dmi'
+	name = "Small Raptor"
+	sprite_icon_state = "smolraptor"
+	has_eye_light_sprites = TRUE
+	has_vore_belly_sprites = TRUE
+	has_dead_sprite_overlay = FALSE
+	rest_sprite_options = list("Default", "Sit", "Bellyup")
+
+/datum/robot_sprite/dogborg/surgical/smolraptor/alt
 	sprite_icon_state = "smolraptor_alt"
