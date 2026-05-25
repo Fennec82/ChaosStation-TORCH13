@@ -1,0 +1,7 @@
+
+GLOBAL_LIST_EMPTY(shell_module_blacklist) //TORCHEdit
+GLOBAL_LIST_EMPTY(latejoin_gatewaystation)
+GLOBAL_LIST_EMPTY(latejoin_plainspath)
+GLOBAL_LIST_EMPTY(latejoin_fueldepot)
+GLOBAL_LIST_EMPTY(latejoin_tyrvillage)
+GLOBAL_LIST_EMPTY(latejoin_thedark)
