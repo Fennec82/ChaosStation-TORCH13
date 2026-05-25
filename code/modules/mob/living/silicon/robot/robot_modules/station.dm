@@ -265,7 +265,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/robot/medical/surgeon/create_equipment(var/mob/living/silicon/robot/robot)
 	..()
-	src.modules += new /obj/item/healthanalyzer(src)
+	src.modules += new /obj/item/healthanalyzer/improved(src)
 	src.modules += new /obj/item/sleevemate(src)
 	src.modules += new /obj/item/reagent_scanner/adv(src)
 	src.modules += new /obj/item/roller_holder(src)
