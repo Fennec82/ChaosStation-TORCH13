@@ -61,7 +61,7 @@
 /datum/robot_sprite/fluff/shara/surgical
 	module_type = "Critical Care"
 
-	sprite_icon_state = "shara
+	sprite_icon_state = "shara"
 	sprite_hud_icon_state = "medihound"
 
 #undef CUSTOM_BORGSPRITE
