@@ -1,0 +1,7 @@
+Hark, code diver! Arrhythmia_V here!
+
+You may be wondering why this  file is here, especially given Chaosstation's strict c-key restriction policy.
+Well, the only reason this file exists is because of the fact that Shara has been a longstanding vanity project of mine pretty much since Chaosstation has been activly hosted and developed.
+You may criticize me for my hypocrisy all you want, but I have no intention of removing this file, as it is the only way to add Shara's sprites to the game while only allowing certen people to play her.
+I have truly now, as they say, become the very thing I swore to destroy.
+-Arrhythmia_V, Host and Lead Developer of Chaosstation
