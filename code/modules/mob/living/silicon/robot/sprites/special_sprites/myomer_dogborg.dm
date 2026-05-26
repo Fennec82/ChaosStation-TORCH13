@@ -63,7 +63,7 @@
 	sprite_icon = 'icons/mob/robot/myomer_dogborg/ProjectMyomerMedical.dmi'
 	rest_sprite_options = list("Default", "Sit")
 	belly_capacity_list = list("sleeper" = 3, "throat" = 2)
-	module_type = list("Crisis", "Surgeon")
+	module_type = list("Paramedic", "Critical Care")
 
 /datum/robot_sprite/dogborg/science/myomer
 	name = "Myomer"
