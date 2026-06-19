@@ -5221,5 +5221,6 @@
 #include "modular_chomp\maps\~turfpacks\unsim_turfs\unsim_turfs_special.dm"
 #include "modular_chomp\maps\~turfpacks\unsim_turfs\unsim_turfs_tiles.dm"
 #include "modular_chomp\maps\~turfpacks\unsim_turfs\unsim_turfs_walls.dm"
+#include "modular_zzzchaos\code\modules\mob\living\silicon\robot\sprites\special_sprites\fluff.dm"
 #include "modular_zzzchaos\code\modules\vore\fluffstuff\custom_items_chaos.dm"
 // END_INCLUDE
