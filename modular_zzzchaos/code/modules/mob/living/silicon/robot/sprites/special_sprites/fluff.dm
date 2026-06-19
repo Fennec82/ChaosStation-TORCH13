@@ -55,7 +55,7 @@
 	icon_y = 32
 
 	whitelist_ckey = "RiotScopez"
-	whitelist_charname = "Shara"
+//	whitelist_charname = "Shara"
 
 
 /datum/robot_sprite/fluff/shara/surgical
