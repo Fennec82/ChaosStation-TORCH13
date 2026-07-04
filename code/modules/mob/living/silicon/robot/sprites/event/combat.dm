@@ -73,7 +73,7 @@
 */
 
 /datum/robot_sprite/dogborg/combat/smolraptor
-	sprite_icon = 'icons/mob/robot/smallraptors/smolraptor_syndie.dmi'
+	sprite_icon = 'icons/mob/robot/smallraptors/smolraptor_ninja.dmi' //Chaosstation change - no syndicate combat sprites
 	name = "Small Raptor"
 	sprite_icon_state = "smolraptor"
 	has_eye_light_sprites = TRUE
@@ -132,6 +132,7 @@
 	sprite_hud_icon_state = "ert"
 	rest_sprite_options = list("Default")
 
+/* //Chaosstation change - Not suitable for ERT
 /datum/robot_sprite/dogborg/tall/combat/borgi
 	name = "Borgi"
 	sprite_icon_state = "borgi"
@@ -139,6 +140,7 @@
 	rest_sprite_options = list("Default")
 	has_eye_sprites = FALSE
 	has_eye_light_sprites = TRUE
+*/
 
 /datum/robot_sprite/dogborg/tall/combat/raptor
 	name = "Raptor V-4"
@@ -175,21 +177,21 @@
 
 /datum/robot_sprite/dogborg/tall/combat/tall/mmeka
 	name = "NIKO"
-	sprite_icon_state = "mmekasyndi"
+	sprite_icon_state = "mmekaninja"
 	has_vore_belly_sprites = TRUE
 	icon_x = 32
 	pixel_x = 0
 
 /datum/robot_sprite/dogborg/tall/combat/tall/fmeka
 	name = "NIKA"
-	sprite_icon_state = "fmekasyndi"
+	sprite_icon_state = "fmekaninja"
 	has_vore_belly_sprites = TRUE
 	icon_x = 32
 	pixel_x = 0
 
 /datum/robot_sprite/dogborg/tall/combat/tall/k4t
 	name = "K4T"
-	sprite_icon_state = "k4tsyndi"
+	sprite_icon_state = "k4tninja"
 	has_vore_belly_sprites = FALSE
 	icon_x = 32
 	pixel_x = 0

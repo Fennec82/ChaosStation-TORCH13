@@ -36,6 +36,7 @@
 	icon_x = 32
 	pixel_x = 0
 
+/* // This is better suited for an ERT borg sprite
 /datum/robot_sprite/dogborg/explorer/smolraptor
 	sprite_icon = 'icons/mob/robot/smallraptors/smolraptor_ninja.dmi'
 	name = "Small Raptor"
@@ -44,7 +45,7 @@
 	has_vore_belly_sprites = TRUE
 	has_dead_sprite_overlay = FALSE
 	rest_sprite_options = list("Default", "Sit", "Bellyup")
-
+*/
 /* placeholder
 /datum/robot_sprite/dogborg/tall/explorer
 	module_type = "Exploration"
