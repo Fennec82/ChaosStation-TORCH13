@@ -168,7 +168,7 @@
 
 /datum/robot_sprite/dogborg/tall/combat/tall
 	name = "MEKA"
-	sprite_icon_state = "mekasyndi"
+	sprite_icon_state = "mekaninja"
 	module_type = "Combat"
 	sprite_icon = 'icons/mob/robot/tallrobot/tallrobots.dmi'
 	has_vore_belly_sprites = TRUE
