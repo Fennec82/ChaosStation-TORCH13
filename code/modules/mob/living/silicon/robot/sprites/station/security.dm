@@ -262,7 +262,7 @@
 
 
 /datum/robot_sprite/dogborg/security/vale2
-	name = "Secborg model V-3"
+	name = "Valekin"
 	sprite_icon = 'icons/mob/robot/widerobot/widerobot.dmi'
 	sprite_icon_state = "secvale"
 	sprite_hud_icon_state = "k9"
