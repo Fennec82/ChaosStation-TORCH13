@@ -703,7 +703,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	feedback_add_details("admin_verb","LFS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_explosion(atom/O as obj|mob|turf in world)
-	set category = "Fun.Do Not"
+	set category = "Fun.Funny"
 	set name = "Explosion"
 
 	if(!check_rights(R_DEBUG|R_FUN))	return
@@ -731,7 +731,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		return
 
 /client/proc/cmd_admin_emp(atom/O as obj|mob|turf in world)
-	set category = "Fun.Do Not"
+	set category = "Fun.Funny"
 	set name = "EM Pulse"
 
 	if(!check_rights(R_DEBUG|R_FUN))	return
@@ -757,7 +757,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		return
 
 /client/proc/cmd_admin_gib(mob/M as mob in mob_list)
-	set category = "Fun.Do Not"
+	set category = "Fun.Funny"
 	set name = "Gib"
 
 	if(!check_rights(R_ADMIN|R_FUN))	return
@@ -779,7 +779,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 
 /client/proc/cmd_admin_gib_self()
 	set name = "Gibself"
-	set category = "Fun.Do Not"
+	set category = "Fun.Funny"
 
 	if(!holder)
 		return
@@ -997,7 +997,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 
 
 /client/proc/everyone_random()
-	set category = "Fun.Do Not"
+	set category = "Fun.Funny"
 	set name = "Make Everyone Random"
 	set desc = "Make everyone have a random appearance. You can only use this before rounds!"
 

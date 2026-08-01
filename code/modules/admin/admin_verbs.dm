@@ -248,7 +248,7 @@
 #undef AUTOBANTIME
 
 /client/proc/drop_bomb() // Some admin dickery that can probably be done better -- TLE
-	set category = "Fun.Do Not"
+	set category = "Fun.Funny"
 	set name = "Drop Bomb"
 	set desc = "Cause an explosion of varying strength at your location."
 
@@ -476,7 +476,7 @@
 		message_admins("Admin [key_name_admin(usr)] has [CONFIG_GET(flag/allow_drone_spawn) ? "en" : "dis"]abled maintenance drones.", 1)
 
 /client/proc/man_up(mob/T as mob in mob_list)
-	set category = "Fun.Do Not"
+	set category = "Fun.Funny"
 	set name = "Man Up"
 	set desc = "Tells mob to man up and deal with it."
 	set popup_menu = FALSE //VOREStation Edit - Declutter.
@@ -490,7 +490,7 @@
 	message_admins(span_blue("[key_name_admin(usr)] told [key_name(T)] to man up and deal with it."), 1)
 
 /client/proc/global_man_up()
-	set category = "Fun.Do Not"
+	set category = "Fun.Funny"
 	set name = "Man Up Global"
 	set desc = "Tells everyone to man up and deal with it."
 
