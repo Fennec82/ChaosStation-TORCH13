@@ -1,3 +1,15 @@
 2026-08-01:
   Arrhythmia_V:
   - rscadd: Paramedic undersuit selector in the loadout now has default options
+  - rscadd: Nanotrasen security has now authorized Paramedics to carry firearms. You
+      can find them in their lockers. A taser during code green or a lethal weapon
+      on code red. NT Security would like to remind medical staff that these guns
+      should only be handled by paramedics or doctors acting in that capacity, NOT
+      EMTs. The Vir medical board would also like to remind medics that medical staff
+      is only allowed to use guns to defend themselves or their patients, and using
+      a weapon in aggression is an ethics violation and will lead to an investigation
+      and possible suspension of license to practice.
+  - rscadd: To support this new change, Paramedics are allowed to choose a gun holster
+      in the loadout menu
+  - admin: CENTCOM will be watching medics closely to make sure they are not abusing
+      their gun privileges
