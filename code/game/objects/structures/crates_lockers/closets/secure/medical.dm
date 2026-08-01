@@ -124,7 +124,8 @@
 		/obj/item/storage/box/freezer,
 		/obj/item/clothing/accessory/storage/white_vest,
 		/obj/item/taperoll/medical,
-		/obj/item/gun/energy/taser) //Chaosstation addition
+		/obj/item/gun/energy/taser,
+		/obj/item/clothing/accessory/holster/leg/black) //Chaosstation addition
 
 /obj/structure/closet/secure_closet/CMO
 	name = "chief medical officer's locker"
