@@ -2657,13 +2657,14 @@ includes scars and tattoos
 	icon_state = "bigleggy"
 	color_blend_mode = ICON_MULTIPLY
 	body_parts = list(BP_R_LEG, BP_L_LEG)
-	digitigrade_acceptance = MARKING_DIGITIGRADE_ONLY
+//	digitigrade_acceptance = MARKING_DIGITIGRADE_ONLY
 	hide_body_parts = list(BP_R_LEG, BP_L_LEG)
 	digitigrade_icon = 'icons/mob/human_races/markings.dmi'
 
 /datum/sprite_accessory/marking/bigleggy/stanced
 	name = "Big Leggies - Legs (Stanced)"
 	icon_state = "bigleggy_stanced"
+	digitigrade_acceptance = MARKING_DIGITIGRADE_ONLY
 
 /datum/sprite_accessory/marking/bigleggy/feet
 	name = "Big Leggies - Feet"
@@ -2674,6 +2675,7 @@ includes scars and tattoos
 /datum/sprite_accessory/marking/bigleggy/feet/stanced
 	name = "Big Leggies - Feet (Stanced)"
 	icon_state = "bigleggy_markings_stanced"
+	digitigrade_acceptance = MARKING_DIGITIGRADE_ONLY
 
 /datum/sprite_accessory/marking/bigleggy/feet/bird
 	name = "Big Leggies - Feet (Bird)"
@@ -2682,6 +2684,7 @@ includes scars and tattoos
 /datum/sprite_accessory/marking/bigleggy/feet/bird/stanced
 	name = "Big Leggies - Feet (Bird, Stanced)"
 	icon_state = "bigleggy_m_bird_stanced"
+	digitigrade_acceptance = MARKING_DIGITIGRADE_ONLY
 
 //Big leggy end!
 
