@@ -536,6 +536,8 @@
 /datum/gear/uniform/paramedic_selector/New()
 	..()
 	var/list/selector_uniforms = list(
+		"Trauma Team"=/obj/item/clothing/under/rank/medical/paramedic,
+		"EMT"=/obj/item/clothing/under/rank/medical/paramedic_alt,
 		"dark"=/obj/item/clothing/under/rank/paramedunidark,
 		"dark w/ skirt"=/obj/item/clothing/under/rank/parameduniskirtdark,
 		"light"=/obj/item/clothing/under/rank/paramedunilight,
