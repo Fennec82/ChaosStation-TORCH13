@@ -113,6 +113,7 @@
 	belt = /obj/item/storage/belt/medical/emt
 	pda_slot = slot_l_store
 	id_type = /obj/item/card/id/medical/emt
+	back = /obj/item/gun/energy/taser //Chaosstation addition
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
 /decl/hierarchy/outfit/job/medical/paramedic/emt
