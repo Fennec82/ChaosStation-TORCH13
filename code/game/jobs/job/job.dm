@@ -207,6 +207,10 @@
 
 
 /datum/job/proc/is_species_banned(species_name, brain_type)
+	// CHOMPEdit begin -- Shadekin cannot be any crew position
+	if(species_name == SPECIES_SHADEKIN)
+		return FALSE  //Chaosstation change - Shadekin crew
+	// CHOMPEdit end
 	return FALSE // VOREStation Edit - Any species can be any job.
 	/* VOREStation Removal
 	if(banned_job_species == null)
