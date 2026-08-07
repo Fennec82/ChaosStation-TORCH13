@@ -8,14 +8,14 @@
 /datum/sprite_accessory/tail
 	name = DEVELOPER_WARNING_NAME
 	icon = 'icons/mob/human_races/sprite_accessories/tails.dmi'
-	do_colouration = 0 //Set to 1 to enable coloration using the tail color.
+	do_colouration = 0 //Set to TRUE to enable coloration using the tail color.
 
-	color_blend_mode = ICON_ADD // Only appliciable if do_coloration = 1
+	color_blend_mode = ICON_ADD // Only appliciable if do_coloration = TRUE
 	em_block = TRUE
 	var/extra_overlay // Icon state of an additional overlay to blend in.
 	var/extra_overlay2 //Tertiary.
-	var/show_species_tail = 0 // If false, do not render species' tail.
-	var/clothing_can_hide = 1 // If true, clothing with HIDETAIL hides it
+	var/show_species_tail = FALSE // If false, do not render species' tail.
+	var/clothing_can_hide = TRUE // If true, clothing with HIDETAIL hides it
 	var/desc = DEVELOPER_WARNING_NAME
 	var/ani_state // State when wagging/animated
 	var/extra_overlay_w // Wagging state for extra overlay
@@ -129,7 +129,7 @@
 	name = "rabbit, colourable (vwag)"
 	desc = ""
 	icon_state = "rabbit"
-	do_colouration = TRUE
+	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	ani_state = "rabbit_w"
 
@@ -138,7 +138,7 @@
 	desc = ""
 	icon_state = "rabbitalt"
 	extra_overlay = "rabbitalt-tips"
-	do_colouration = TRUE
+	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	ani_state = "rabbitalt_w"
 	extra_overlay_w = "rabbitalt-tips_w"
@@ -340,7 +340,7 @@
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 	hide_body_parts = list(BP_L_LEG, BP_L_FOOT, BP_R_LEG, BP_R_FOOT) //Exclude pelvis just in case.
-	clip_mask_icon = 'icons/mob/human_races/sprite_accessories/taurs.dmi'
+	clip_mask_icon = 'icons/mob/human_races/sprite_accessories/biglegs.dmi'
 	clip_mask_state = "taur_clip_mask_def" //Used to clip off the lower part of suits & uniforms.
 
 /datum/sprite_accessory/tail/tailmaw
@@ -482,7 +482,7 @@
 	name = "large snake tail (vwag)"
 	desc = ""
 	icon_state = "bigsnaketail"
-	do_colouration = TRUE
+	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	ani_state = "bigsnaketail_w"
 
@@ -491,7 +491,7 @@
 	desc = ""
 	icon_state = "bigsnaketailstripes"
 	extra_overlay = "bigsnaketailstripes-tips"
-	do_colouration = TRUE
+	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	ani_state = "bigsnaketailstripes_w"
 	extra_overlay_w = "bigsnaketailstripes-tips_w"
@@ -501,7 +501,7 @@
 	desc = ""
 	icon_state = "bigsnaketailstripesalt"
 	extra_overlay = "bigsnaketailstripesalt-tips"
-	do_colouration = TRUE
+	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	ani_state = "bigsnaketailstripesalt_w"
 	extra_overlay_w = "bigsnaketailstripesalt-tips_w"
@@ -511,7 +511,7 @@
 	desc = ""
 	icon_state = "bigsnaketaildual"
 	extra_overlay = "bigsnaketaildual-tips"
-	do_colouration = TRUE
+	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	ani_state = "bigsnaketaildual_w"
 	extra_overlay_w = "bigsnaketaildual-tips_w"
@@ -521,7 +521,7 @@
 	desc = ""
 	icon_state = "bigsnaketailunder"
 	extra_overlay = "bigsnaketailunder-tips"
-	do_colouration = TRUE
+	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	ani_state = "bigsnaketailunder_w"
 	extra_overlay_w = "bigsnaketailunder-tips_w"
@@ -1124,7 +1124,7 @@
 	desc = ""
 	icon_state = "foxtail"
 	extra_overlay = "foxtail-tips"
-	do_colouration = TRUE
+	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	ani_state = "foxtail_w"
 	extra_overlay_w = "foxtail-tips_w"
@@ -1173,7 +1173,7 @@
 	desc = ""
 	icon_state = "ninekitsune"
 	extra_overlay = "ninekitsune-tips"
-	do_colouration = TRUE
+	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	ani_state = "foxtail_w"
 	extra_overlay_w = "foxtail-tips_w"
@@ -1335,6 +1335,15 @@
 	color_blend_mode = ICON_MULTIPLY
 	lower_layer_dirs = list(SOUTH, WEST)
 
+/datum/sprite_accessory/tail/altevian_eyed
+	name = "Eyed Tail"
+	icon_state = "altevian_eyed"
+	extra_overlay = "altevian_eyed2"
+	extra_overlay2 = "altevian_eyed3"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	lower_layer_dirs = list(SOUTH, WEST)
+
 /datum/sprite_accessory/tail/shark_finless
 	name = "shark tail, finless (colorable)"
 	desc = ""
@@ -1441,7 +1450,7 @@
 	do_colouration = 1
 	extra_overlay = "synth_stilts_marking"
 	hide_body_parts = list(BP_L_LEG, BP_L_FOOT, BP_R_LEG, BP_R_FOOT) //Exclude pelvis just in case.
-	clip_mask_icon = 'icons/mob/human_races/sprite_accessories/taurs.dmi'
+	clip_mask_icon = 'icons/mob/human_races/sprite_accessories/biglegs.dmi'
 	clip_mask_state = "taur_clip_mask_def" //Used to clip off the lower part of suits & uniforms.
 
 /datum/sprite_accessory/tail/blade_like_tail
@@ -1464,7 +1473,7 @@
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 	hide_body_parts = list(BP_L_LEG, BP_L_FOOT, BP_R_LEG, BP_R_FOOT) //Exclude pelvis just in case.
-	clip_mask_icon = 'icons/mob/human_races/sprite_accessories/taurs.dmi'
+	clip_mask_icon = 'icons/mob/human_races/sprite_accessories/biglegs.dmi'
 	clip_mask_state = "taur_clip_mask_def" //Used to clip off the lower part of suits & uniforms.
 	extra_overlay = "horse" //I can't believe this works.
 
@@ -1546,7 +1555,7 @@
 //LONG TAILS ARE NOT TAUR BUTTS >:O
 /datum/sprite_accessory/tail/longtail
 	name = DEVELOPER_WARNING_NAME
-	icon = 'icons/mob/human_races/sprite_accessories/taurs.dmi'
+	icon = 'icons/mob/human_races/sprite_accessories/tails_long.dmi'
 	offset_x = -16
 	do_colouration = 1 // Yes color, using tail color
 	color_blend_mode = ICON_MULTIPLY  // The sprites for taurs are designed for ICON_MULTIPLY
@@ -1573,7 +1582,6 @@
 
 /datum/sprite_accessory/tail/longtail/zaprat
 	name = "bolt-shaped tail, dual color"
-	icon = 'icons/mob/human_races/sprite_accessories/taurs.dmi'
 	icon_state = "zaprat_s"
 	extra_overlay = "zaprat_markings"
 	do_colouration = 1
@@ -1683,6 +1691,47 @@
 	name = "Anteater tail"
 	icon_state = "anteater_tail"
 
+/datum/sprite_accessory/tail/longtail/brush
+	name = "Snake Tail with Brush"
+	icon_state = "bigsnaketailbrush"
+	extra_overlay = "bigsnaketailbrush_brush"
+
+/datum/sprite_accessory/tail/longtail/brushscutes
+	name = "Snake Tail with Brush and Scutes"
+	icon_state = "bigsnaketailbrushunder"
+	extra_overlay = "bigsnaketailbrushunder_scutes"
+	extra_overlay2 = "bigsnaketailbrush_brush"
+
+/datum/sprite_accessory/tail/longtail/clawscutes
+	name = "Snake Tail with Claw and Scutes"
+	icon_state = "bigsnaketailbrushunder"
+	extra_overlay = "bigsnaketailbrushunder_scutes"
+	extra_overlay2 = "bigsnaketailclaw_claw"
+
+/datum/sprite_accessory/tail/longtail/claw
+	name = "Snake Tail with Claw"
+	icon_state = "bigsnaketailbrush"
+	extra_overlay = "bigsnaketailclaw_claw"
+
+/datum/sprite_accessory/tail/longtail/scug // Wawa
+	name = "Catslug Tail"
+	icon_state = "scug"
+
+/datum/sprite_accessory/tail/longtail/scug/dots
+	name = "Catslug Tail Dotted"
+	extra_overlay =  "scug_markings"
+
+/datum/sprite_accessory/tail/taur/long_lizard
+	name = "Large Dragon Tail"
+	icon_state = "big_liz"
+	can_ride = FALSE
+	hide_body_parts = null
+	clip_mask_icon = null
+	clip_mask_state = null
+
+/datum/sprite_accessory/tail/taur/long_lizard/scaled
+	name = "Large Dragon Tail/W scales"
+	extra_overlay = "big_liz_mark"
 
 /datum/sprite_accessory/tail/small_bugbum
 	name = "Bug Abdomen, Alt, Small (Dual-Color)"
@@ -1942,3 +1991,20 @@
 	ani_state = "nightstalker_diamondback_w"
 	extra_overlay = "nightstalker_diamondback_markings"
 	extra_overlay_w = "nightstalker_diamondback_markings_w"
+
+/datum/sprite_accessory/tail/xenotail_fullcolour_vwag
+	name = "xenomorph tail (fully colourable, vwag)"
+	desc = ""
+	icon_state = "xenotail_fullcolouralt"
+	ani_state = "xenotail_fullcolouralt_w"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/tail/chu
+	name = "chu tail"
+	desc = ""
+	icon_state = "chu"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "chu_markings"
+	extra_overlay2 = "chu_tipmarkings"
