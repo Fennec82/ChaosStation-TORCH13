@@ -37,7 +37,7 @@
 	name = "xenomorph tail 1"
 	icon = 'icons/mob/human_races/sprite_accessories/tails/tails_exotic.dmi'
 	icon_state = "snag"
-	do_colouration = FALSE
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/xenotail
 	name = "xenomorph tail 2"

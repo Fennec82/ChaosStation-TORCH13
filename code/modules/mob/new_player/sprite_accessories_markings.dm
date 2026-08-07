@@ -1085,7 +1085,7 @@ includes scars and tattoos
 	icon_state = "bandage1"
 	body_parts = list(BP_HEAD)
 	genetic = FALSE
-	do_colouration = FALSE
+	do_colouration = 0
 
 /datum/sprite_accessory/marking/bandage/teshari
 	name = "Bandage, Head 1 (Teshari)"

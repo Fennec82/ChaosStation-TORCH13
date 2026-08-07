@@ -400,7 +400,7 @@
 /datum/sprite_accessory/tail/taur/wolf/wolf_3
 	name = "WolfTG (Taur)" //It's Citadel, not TG. :V
 	icon_state = "wolf3_s"
-	do_colouration = FALSE	//this is already pre-colored.
+	do_colouration = 0	//this is already pre-colored.
 
 /datum/sprite_accessory/tail/taur/wolf/husky
 	name = "Husky (Taur)"

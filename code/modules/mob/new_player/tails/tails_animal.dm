@@ -93,14 +93,14 @@
 	icon = 'icons/mob/human_races/sprite_accessories/tails/tails_animal.dmi'
 	icon_state = "ketraitail"
 	ani_state = "ketraitail_w"
-	do_colouration = FALSE
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/ketrainew_wag
 	name = "new fennix tail (vwag)"
 	icon = 'icons/mob/human_races/sprite_accessories/tails/tails_animal.dmi'
 	icon_state = "ketraitailnew"
 	ani_state = "ketraitailnew_w"
-	do_colouration = FALSE
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/redpanda
 	name = "red panda"
@@ -392,7 +392,7 @@
 	name = "Raccoon gray tail"
 	icon = 'icons/mob/human_races/sprite_accessories/tails/tails_animal.dmi'
 	icon_state = "raccoon_tail"
-	do_colouration = FALSE
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/striped_tail
 	name = "Striped tail, colorable"

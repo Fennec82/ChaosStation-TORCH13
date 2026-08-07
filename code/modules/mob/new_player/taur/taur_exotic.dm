@@ -4,7 +4,7 @@
 	icon_state = "alraunecolor_s"
 	ani_state = "alraunecolor_closed_s"
 	ckeys_allowed = null
-	do_colouration = TRUE
+	do_colouration = 1
 	extra_overlay = "alraunecolor_markings"
 	extra_overlay_w = "alraunecolor_closed_markings"
 	clip_mask_state = "taur_clip_mask_alraune"
@@ -14,7 +14,7 @@
 	name = "Giant Spider (Taur)"
 	icon = 'icons/mob/human_races/sprite_accessories/taurs/taurs_exotic.dmi'
 	icon_state = "giantspidertaur"
-	do_colouration = FALSE
+	do_colouration = 0
 	extra_overlay = null
 	icon_sprite_tag = "giantspidertaur"
 
@@ -36,7 +36,7 @@
 /datum/sprite_accessory/tail/taur/giantspider/colorable
 	name = "Giant Spider dual-color (Taur)"
 	icon_state = "giantspidertaur-colorable"
-	do_colouration = TRUE
+	do_colouration = 1
 	extra_overlay = "giantspidertaur-colorable-markings"
 	icon_sprite_tag = "giantspidertaur-colorable"
 
@@ -67,7 +67,7 @@
 /datum/sprite_accessory/tail/taur/giantspider/ant	//technically not a spider, but it inherits the same messages
 	name = "Ant (dual color)"
 	icon_state = "ant_s"
-	do_colouration = TRUE
+	do_colouration = 1
 	extra_overlay = "ant_markings"
 	clip_mask_state = "taur_clip_mask_wasp"
 	icon_sprite_tag = "wasp"
@@ -75,7 +75,7 @@
 /datum/sprite_accessory/tail/taur/giantspider/wasp	//same as above, but for wasps
 	name = "Wasp (dual color)"
 	icon_state = "wasp_s"
-	do_colouration = TRUE
+	do_colouration = 1
 	extra_overlay = "wasp_markings"
 	clip_mask_state = "taur_clip_mask_wasp"
 	icon_sprite_tag = "wasp"

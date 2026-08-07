@@ -1,6 +1,6 @@
 /datum/sprite_accessory/tail/taur
 	name = DEVELOPER_WARNING_NAME
-	do_colouration = TRUE // Yes color, using tail color
+	do_colouration = 1 // Yes color, using tail color
 	color_blend_mode = ICON_MULTIPLY  // The sprites for taurs are designed for ICON_MULTIPLY
 
 	var/can_ride = TRUE			//whether we're real rideable taur or just in that category

@@ -5,7 +5,7 @@
 	name = "Long Lizard Tail (Roiz Lizden)"
 	icon = 'icons/mob/human_races/sprite_accessories/taurs/taurs_snowflake.dmi'
 	icon_state = "roiz_tail_s"
-	do_colouration = FALSE
+	do_colouration = 0
 	ckeys_allowed = list("spoopylizz")
 	hide_body_parts = null
 	clip_mask_icon = null
@@ -17,7 +17,7 @@
 	icon = 'icons/mob/human_races/sprite_accessories/taurs/taurs_snowflake.dmi'
 	icon_state = "orcamermaid_s"
 	can_ride = TRUE
-	do_colouration = FALSE
+	do_colouration = 0
 	ckeys_allowed = list("grallstonefist")
 
 //wickedtemp: Chakat Tempest
@@ -42,7 +42,7 @@
 	icon = 'icons/mob/human_races/sprite_accessories/taurs/taurs_snowflake.dmi'
 	icon_state = "ariana_s"
 	ckeys_allowed = list("liquidfirefly")
-	do_colouration = FALSE
+	do_colouration = 0
 
 	msg_owner_disarm_run = "You quickly push %prey to the ground with your leg!"
 	msg_prey_disarm_run = "%owner pushes you down to the ground with their leg!"
@@ -66,7 +66,7 @@
 	icon_state = "alraune_s"
 	ani_state = "alraune_closed_s"
 	ckeys_allowed = list("natje")
-	do_colouration = FALSE
+	do_colouration = 0
 	can_ride = FALSE
 	clip_mask_state = "taur_clip_mask_alraune"
 

@@ -2,7 +2,7 @@
 	name = "bee thorax"
 	icon = 'icons/mob/human_races/sprite_accessories/tails/tails_bug.dmi'
 	icon_state = "beethorax"
-	do_colouration = FALSE
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/buggo
 	name = "Bug abdomen, colorable"

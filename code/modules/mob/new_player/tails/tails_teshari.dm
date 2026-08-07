@@ -51,7 +51,7 @@
 	name = "Teshari bee thorax"
 	icon = 'icons/mob/human_races/sprite_accessories/tails/tails_teshari.dmi'
 	icon_state = "beethorax_tesh"
-	do_colouration = FALSE
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/teshbuggo
 	name = "Teshari bug abdomen, colorable"

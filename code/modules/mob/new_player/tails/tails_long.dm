@@ -3,7 +3,7 @@
 	desc = ""
 	icon = 'icons/mob/human_races/sprite_accessories/tails/tails_long.dmi'
 	offset_x = -16
-	do_colouration = TRUE // Yes color, using tail color
+	do_colouration = 1 // Yes color, using tail color
 
 /datum/sprite_accessory/tail/longtail/shadekin_tail
 	name = "Shadekin Tail"
@@ -59,7 +59,7 @@
 	name = "Desert Nightstalker Tail (vwag)"
 	icon_state = "nightstalker_desert"
 	ani_state = "nightstalker_desert_w"
-	do_colouration = FALSE // We're not coloring this, these are pre-colored
+	do_colouration = 0 // We're not coloring this, these are pre-colored
 
 /datum/sprite_accessory/tail/longtail/diamondback_nightstalker
 	name = "Diamondback Nightstalker Tail (dual-color, vwag)"
