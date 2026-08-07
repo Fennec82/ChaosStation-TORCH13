@@ -43,17 +43,17 @@
 /obj/item/encryptionkey/headset_rob
 	name = "robotics radio encryption key"
 	icon_state = "rob_cypherkey"
-	channels = list(CHANNEL_ENGINEERING = 1, CHANNEL_SCIENCE = 1)
+	channels = list(CHANNEL_MEDICAL = 1, CHANNEL_ENGINEERING = 1, CHANNEL_SCIENCE = 1)
 
 /obj/item/encryptionkey/headset_med
 	name = "medical radio encryption key"
 	icon_state = "med_cypherkey"
-	channels = list(CHANNEL_MEDICAL = 1)
+	channels = list(CHANNEL_MEDICAL = 1, CHANNEL_SCIENCE = 1)
 
 /obj/item/encryptionkey/headset_sci
 	name = "science radio encryption key"
 	icon_state = "sci_cypherkey"
-	channels = list(CHANNEL_SCIENCE = 1)
+	channels = list(CHANNEL_MEDICAL = 1, CHANNEL_SCIENCE = 1)
 
 /obj/item/encryptionkey/headset_medsci
 	name = "medical research radio encryption key"
@@ -79,7 +79,7 @@
 /obj/item/encryptionkey/heads/rd
 	name = "research director's encryption key"
 	icon_state = "rd_cypherkey"
-	channels = list(CHANNEL_SCIENCE = 1, CHANNEL_COMMAND = 1)
+	channels = list(CHANNEL_MEDICAL = 1, CHANNEL_SCIENCE = 1, CHANNEL_COMMAND = 1)
 
 /obj/item/encryptionkey/heads/hos
 	name = "head of security's encryption key"
@@ -94,7 +94,7 @@
 /obj/item/encryptionkey/heads/cmo
 	name = "chief medical officer's encryption key"
 	icon_state = "cmo_cypherkey"
-	channels = list(CHANNEL_MEDICAL = 1, CHANNEL_COMMAND = 1)
+	channels = list(CHANNEL_MEDICAL = 1,  CHANNEL_SCIENCE = 1, CHANNEL_COMMAND = 1)
 
 /obj/item/encryptionkey/heads/hop
 	name = "head of personnel's encryption key"

@@ -11,17 +11,17 @@
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the " + JOB_SITE_MANAGER
+	supervisors = "the " + JOB_RESEARCH_DIRECTOR
 	selection_color = "#026865"
 	req_admin_notify = 1
 	economic_modifier = 10
 	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce, access_teleporter, //CHOMPEdit
-			access_keycard_auth, access_psychiatrist, access_eva, access_external_airlocks, access_maint_tunnels, access_gateway)
+			access_keycard_auth, access_psychiatrist, access_eva, access_external_airlocks, access_maint_tunnels, access_gateway, access_robotics, access_tox, access_research, access_xenobiology) //Chaosstation addition - MedSci
 
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce, access_teleporter,//CHOMPEdit
-			access_keycard_auth, access_psychiatrist, access_eva, access_external_airlocks, access_maint_tunnels, access_gateway)
+			access_keycard_auth, access_psychiatrist, access_eva, access_external_airlocks, access_maint_tunnels, access_gateway, access_robotics, access_tox, access_research, access_xenobiology)
 	alt_titles = list(JOB_ALT_CHIEF_PHYSICIAN = /datum/alt_title/chief_physician, JOB_ALT_MEDICAL_DIRECTOR = /datum/alt_title/medical_director, /*CHOMPEdit RemovalJOB_ALT_HEALTHCARE_MANAGER = /datum/alt_title/healthcare_manager*/)
 
 	minimum_character_age = 25
@@ -36,13 +36,13 @@
 	dept_time_required = 60
 
 	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
-	job_description = "The CMO manages the Medical department and is a position requiring experience and skill; their goal is to ensure that their \
+	job_description = "The CMO manages the Medical wing of MedSci and is a position requiring experience and skill; their goal is to ensure that their \
 						staff keep the station's crew healthy and whole. They are primarily interested in making sure that patients are safely found and \
 						transported to Medical for treatment. They are expected to keep the crew informed about threats to their health and safety, and \
-						about the importance of Suit Sensors."
+						about the importance of Suit Sensors. They are expercted to work closely with the RD to manage MedSci, and are subservient to the RD except during a code violet."
 
 /datum/job/cmo/get_request_reasons()
-	return list("Surgery pending", "Viral outbreak", "Training crew", "Assembling expedition team")
+	return list("Surgical emergency", "Viral outbreak", "Training crew", "Assembling expedition team")
 
 /datum/alt_title/chief_physician
 	title = JOB_ALT_CHIEF_PHYSICIAN
@@ -68,8 +68,8 @@
 	supervisors = "the " + JOB_CHIEF_MEDICAL_OFFICER
 	selection_color = "#013D3B"
 	economic_modifier = 7
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_eva)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_eva)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_eva, access_robotics, access_tox, access_research, access_xenobiology)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_eva, access_robotics, access_tox, access_research, access_xenobiology)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	job_description = "A " + JOB_MEDICAL_DOCTOR + " is a Jack-of-All-Trades Medical title, covering a variety of skill levels and minor specializations. They are likely \
 						familiar with basic first aid, and a number of accompanying medications, and can generally save, if not cure, a majority of the \
@@ -141,8 +141,8 @@
 	supervisors = "the " + JOB_CHIEF_MEDICAL_OFFICER
 	selection_color = "#013D3B"
 	economic_modifier = 5
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
-	minimal_access = list(access_medical, access_medical_equip, access_chemistry)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_robotics, access_tox, access_research, access_xenobiology)
+	minimal_access = list(access_medical, access_medical_equip, access_chemistry, access_robotics, access_tox, access_research, access_xenobiology)
 	minimal_player_age = 3
 	min_age_by_species = list(SPECIES_PROMETHEAN = 3)
 
@@ -174,7 +174,7 @@
 	supervisors = "the " + JOB_CHIEF_MEDICAL_OFFICER + " and " + JOB_RESEARCH_DIRECTOR
 	selection_color = "#013D3B"
 	economic_modifier = 7
-	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research)
+	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_robotics, access_tox, access_research, access_xenobiology)
 	minimal_access = list(access_medical, access_morgue, access_genetics, access_research)
 
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
@@ -196,8 +196,8 @@
 	economic_modifier = 5
 	supervisors = "the " + JOB_CHIEF_MEDICAL_OFFICER
 	selection_color = "#013D3B"
-	access = list(access_medical, access_medical_equip, access_morgue, access_psychiatrist)
-	minimal_access = list(access_medical, access_medical_equip, access_psychiatrist)
+	access = list(access_medical, access_medical_equip, access_morgue, access_psychiatrist, access_robotics, access_research)
+	minimal_access = list(access_medical, access_medical_equip, access_psychiatrist, access_robotics, access_research)
 	outfit_type = /decl/hierarchy/outfit/job/medical/psychiatrist
 	job_description = "A " + JOB_PSYCHIATRIST + " provides mental health services to crew members in need. They may also be called upon to determine whatever \
 					ails the mentally unwell, frequently under Security supervision. They understand the effects of various psychoactive drugs."
@@ -238,11 +238,11 @@
 	supervisors = "the " + JOB_CHIEF_MEDICAL_OFFICER
 	selection_color = "#013D3B"
 	economic_modifier = 5	//CHOMPstation edit - "Makes Parameds make as much as offduty medical."
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_robotics, access_tox, access_research, access_xenobiology)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks, access_robotics, access_tox, access_research, access_xenobiology)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 	job_description = "A " + JOB_PARAMEDIC + " is primarily concerned with the recovery of patients who are unable to make it to the Medical Department on their own. \
-						They may also be called upon to keep patients stable when Medical is busy or understaffed."
+						They may also be called upon to keep patients stable when Medical is busy or understaffed. In addition, they are responsible for providing internal security for MedSci in the absence of an orderly."
 	alt_titles = list(JOB_ALT_EMERGENCY_MEDICAL_TECHNICIAN = /datum/alt_title/emt, JOB_ALT_MEDICAL_RESPONDER = /datum/alt_title/medical_responder) //CHOMPedit: Removed SAR because that's an actual job here
 	banned_job_species = list(SPECIES_DIONA)
 
