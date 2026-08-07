@@ -839,7 +839,7 @@
 	desc = "ROW ROW, FIGHT THE POWER."
 	flash_prot = 1 //Why not.
 
-//Kitsuhana Uniforms - Despite the fact that we removed KHI, we're keeping these. -YW
+//Kitsuhana Uniforms - Despite the fact that we removed KHI, we're keeping these. -YW //Chaosstation changes - Re-adding KHI fluff items
 /obj/item/clothing/under/rank/khi
 	name = DEVELOPER_WARNING_NAME
 	desc = "Why did you spawn this one? Dork."
@@ -850,44 +850,44 @@
 	icon_state = "khi_uniform"
 
 /obj/item/clothing/under/rank/khi/cmd //Command version
-	name = "GE command suit" //CHOMPedit: Change to GE
-	desc = "Gilthari Exports uniform. An extra-comfortable command one, at that." //CHOMPedit
+	name = "KHI command suit" //CHOMPedit: Change to GE
+	desc = "Kitsuhana Heavy Industries uniform. An extra-comfortable command one, at that." //CHOMPedit
 	icon_state = "khi_uniform_cmd"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/under/rank/khi/sec //Security version
-	name = "GE security suit" //CHOMPedit: Change to GE
-	desc = "Gilthari Exports uniform. This one has angry red security stripes. Keepin' the peace in style." //CHOMPedit
+	name = "KHI security suit" //CHOMPedit: Change to GE
+	desc = "Kitsuhana Heavy Industries uniform. This one has angry red security stripes. Keeping the peace in style." //CHOMPedit
 	icon_state = "khi_uniform_sec"
 	armor = list(melee = 10, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/under/rank/khi/med //Medical version
-	name = "GE medical suit" //CHOMPedit: Change to GE
-	desc = "Gilthari Exports uniform. The medical version. Why not just get a new body, anyway?"//CHOMPedit
+	name = "KHI medical suit" //CHOMPedit: Change to GE
+	desc = "Kitsuhana Heavy Industries uniform. The medical version. Why not just get a new body, anyway?"//CHOMPedit
 	icon_state = "khi_uniform_med"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 10, rad = 0)
 
 /obj/item/clothing/under/rank/khi/eng //Engineering version
-	name = "GE engineering suit" //CHOMPedit: Change to GE
-	desc = "Gilthari Exports uniform. One fit for an engineer, by the looks of it. Building the future, one disaster at a time." //CHOMPedit
+	name = "KHI engineering suit" //CHOMPedit: Change to GE
+	desc = "Kitsuhana Heavy Industries uniform. One fit for an engineer, by the looks of it. Building the future, one disaster at a time." //CHOMPedit
 	icon_state = "khi_uniform_eng"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 10)
 
 /obj/item/clothing/under/rank/khi/sci //Science version
-	name = "GE science suit" //CHOMPedit: Change to GE
-	desc = "Gilthari Exports uniform. For performing science in, based on the color! Only SCIENCE can save us now." //CHOMPedit
+	name = "KHI science suit" //CHOMPedit: Change to GE
+	desc = "Kitsuhana Heavy Industries uniform. For performing science in, based on the color! Only SCIENCE can save us now." //CHOMPedit
 	icon_state = "khi_uniform_sci"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/clothing/under/rank/khi/crg //Cargo version
-	name = "GE cargo suit" //CHOMPedit: Change to GE
-	desc = "A sleek cargo uniform from Gilthari Exports." //CHOMPedit
+	name = "KHI cargo suit" //CHOMPedit: Change to GE
+	desc = "A sleek cargo uniform from Kitsuhana Heavy Industries." //CHOMPedit
 	icon_state = "khi_uniform_crg"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/under/rank/khi/civ //Science version
-	name = "GE civilian suit" //CHOMPedit: Change to GE
-	desc = "A sleek civilian uniform from Gilthari Exports." //CHOMPedit
+	name = "KHI civilian suit" //CHOMPedit: Change to GE
+	desc = "A sleek civilian uniform from Kitsuhana Heavy Industries." //CHOMPedit
 	icon_state = "khi_uniform_civ"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 
@@ -896,7 +896,7 @@
 
 /obj/item/clothing/under/rank/khi/fluff/aronai //Aro fluff version
 	name = "KHI meditech suit"
-	desc = "An outdated uniform of some sort. You get the sense that whoever wore this must've been very full of themselves" //YW edit
+	desc = "An outdated uniform of some sort. You get the sense that whoever wore this must've been very full of themselves" //YW edit //Based - Chaos Dev Team
 	icon_state = "khi_uniform_aro"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 10, rad = 0)
 
