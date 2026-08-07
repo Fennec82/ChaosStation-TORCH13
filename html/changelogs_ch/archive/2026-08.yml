@@ -17,3 +17,8 @@
   Arrhythmia_V:
   - rscadd: Due to recent changes at Nanotrasen Internal Affairs as a result of new
       equal rights laws, Shadekin are now allowed to be crew members!
+2026-08-07:
+  Poojawa, Cameron-the-Raven, and Arrhythmia_V:
+  - rscadd: New tails and taurs ported from CHOMP
+  - refactor: Massive refactor to the back end of tails and taurs. Check your characters!
+  - code_imp: Fixes up some things to make the tail refactor work on TORCH code

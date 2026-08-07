@@ -1,6 +1,0 @@
-author: "Poojawa, Cameron-the-Raven, and Arrhythmia_V"
-delete-after: True
-changes:
-  - rscadd: "New tails and taurs ported from CHOMP"
-  - refactor: "Massive refactor to the back end of tails and taurs. Check your characters!"
-  - code_imp: "Fixes up some things to make the tail refactor work on TORCH code"
