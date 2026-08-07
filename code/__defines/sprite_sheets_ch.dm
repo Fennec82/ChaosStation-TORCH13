@@ -13,4 +13,5 @@ SPECIES_VULPKANIN = 'icons/inventory/suit/mob_vr_vulpkanin.dmi',\
 SPECIES_ZORREN_HIGH = 'icons/inventory/suit/mob_vr_vulpkanin.dmi',\
 SPECIES_FENNEC = 'icons/inventory/suit/mob_vr_vulpkanin.dmi',\
 SPECIES_ALTEVIAN = 'icons/inventory/suit/mob_vr_altevian.dmi',\
-SPECIES_XENOMORPH_HYBRID = 'modular_chomp/icons/inventory/suit/mob_xenomorph_hybrid.dmi')
+SPECIES_XENOMORPH_HYBRID = 'modular_chomp/icons/inventory/suit/mob_xenomorph_hybrid.dmi',\
+SPECIES_SPARKLE = 'icons/inventory/suit/mob_vr_vulpkanin.dmi') //Chaosstation edit - Voidsuits for sparkledogs
