@@ -6,8 +6,8 @@ var/global/list/robot_modules = list(
 	"Command"		= /obj/item/robot_module/robot/chound,
 	"Research" 		= /obj/item/robot_module/robot/research,
 	"Miner" 		= /obj/item/robot_module/robot/miner,
-	"Crisis" 		= /obj/item/robot_module/robot/medical/crisis,
-//	"Surgeon" 		= /obj/item/robot_module/robot/medical/surgeon, // CHOMPedit: Surgeon module removal.
+	"Paramedic"		= /obj/item/robot_module/robot/medical/crisis,
+	"Critical Care" = /obj/item/robot_module/robot/medical/surgeon, // CHOMPedit: Surgeon module removal. //Chaosstation edit - Re-added
 	"Security" 		= /obj/item/robot_module/robot/security/general,
 	"Combat" 		= /obj/item/robot_module/robot/security/combat,
 	"Exploration"	= /obj/item/robot_module/robot/exploration,
@@ -253,20 +253,30 @@ var/global/list/robot_modules = list(
 	pto_type = PTO_MEDICAL
 	supported_upgrades = list(/obj/item/borg/upgrade/restricted/bellycapupgrade)
 
-/* CHOMPedit start: Removal of Surgeon module. *
+// CHOMPedit start: Removal of Surgeon module. *
 //This is a constant back and forth debate. 11 years ago, the 'medical' borg was split into surgery and crisis.
 //Two years ago(?), they were combined into Crisis elsewhere and the idea seems to be well appreciated.
 //However, given this seems as though it will remain a hot topic for as long as SS13 exists, we are going to leave the surgeon module here in the event that we split them. Again.
 //This also goes for the sprite datums. It's be a lot of work to 'clear' them of having surgery in their path just to have to split them again in 2-3 years.
+//Chaosstation comment - We are re-enabling it now. Thanks for leaving this here
 /obj/item/robot_module/robot/medical/surgeon
 	name = "surgeon robot module"
 
 
 /obj/item/robot_module/robot/medical/surgeon/create_equipment(var/mob/living/silicon/robot/robot)
 	..()
-	src.modules += new /obj/item/healthanalyzer(src)
+	src.modules += new /obj/item/healthanalyzer/improved(src)
 	src.modules += new /obj/item/sleevemate(src)
+	src.modules += new /obj/item/reagent_scanner/adv(src)
+	src.modules += new /obj/item/roller_holder(src)
 	src.modules += new /obj/item/reagent_containers/borghypo/surgeon(src)
+	src.modules += new /obj/item/reagent_containers/glass/beaker/large/borg(src)
+	src.modules += new /obj/item/reagent_containers/dropper/industrial(src)
+	src.modules += new /obj/item/reagent_containers/syringe(src)
+	src.modules += new /obj/item/gripper/no_use/organ(src)
+	src.modules += new /obj/item/gripper/medical(src)
+	src.modules += new /obj/item/shockpaddles/robot(src)
+	//Surgeon Modules below
 	src.modules += new /obj/item/autopsy_scanner(src)
 	src.modules += new /obj/item/surgical/scalpel/cyborg(src)
 	src.modules += new /obj/item/surgical/hemostat/cyborg(src)
@@ -278,11 +288,9 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/surgical/circular_saw/cyborg(src)
 	src.modules += new /obj/item/surgical/surgicaldrill/cyborg(src)
 	src.modules += new /obj/item/surgical/bioregen/cyborg(src)
-	src.modules += new /obj/item/gripper/no_use/organ(src)
-	src.modules += new /obj/item/gripper/medical(src)
-	src.modules += new /obj/item/shockpaddles/robot(src)
-	src.modules += new /obj/item/reagent_containers/dropper(src) // Allows surgeon borg to fix necrosis
-	src.modules += new /obj/item/reagent_containers/syringe(src)
+	//Surgeon Modules End
+	src.modules += new /obj/item/inflatable_dispenser/robot(src)
+	src.modules += new /obj/item/holosign_creator/medical(src)
 
 	var/obj/item/reagent_containers/spray/PS = new /obj/item/reagent_containers/spray(src)
 
@@ -327,7 +335,8 @@ var/global/list/robot_modules = list(
 
 	..()
 
-* CHOMPedit end: Removal of Surgeon module. */
+//* CHOMPedit end: Removal of Surgeon module.
+//Chaosstation - Ignore, we readded
 
 /obj/item/robot_module/robot/medical/crisis
 	name = "crisis robot module"
@@ -345,18 +354,13 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/gripper/no_use/organ(src)
 	src.modules += new /obj/item/gripper/medical(src)
 	src.modules += new /obj/item/shockpaddles/robot(src)
-	//Surgeon Modules below
+	//Surgeon Modules below //Chaosstation changes - only enough for tend wounds
 	src.modules += new /obj/item/autopsy_scanner(src)
 	src.modules += new /obj/item/surgical/scalpel/cyborg(src)
 	src.modules += new /obj/item/surgical/hemostat/cyborg(src)
 	src.modules += new /obj/item/surgical/retractor/cyborg(src)
 	src.modules += new /obj/item/surgical/cautery/cyborg(src)
-	src.modules += new /obj/item/surgical/bonegel/cyborg(src)
 	src.modules += new /obj/item/surgical/FixOVein/cyborg(src)
-	src.modules += new /obj/item/surgical/bonesetter/cyborg(src)
-	src.modules += new /obj/item/surgical/circular_saw/cyborg(src)
-	src.modules += new /obj/item/surgical/surgicaldrill/cyborg(src)
-	src.modules += new /obj/item/surgical/bioregen/cyborg(src)
 	//Surgeon Modules End
 	src.modules += new /obj/item/inflatable_dispenser/robot(src)
 	src.modules += new /obj/item/holosign_creator/medical(src)
