@@ -93,7 +93,8 @@
 /datum/surgery_step/repairflesh/repair_burns
 	surgery_name = "Repair Burns"
 	allowed_tools = list(
-	/obj/item/stack/medical/advanced/ointment = 100,
+	/obj/item/surgical/FixOVein = 100,
+	/obj/item/stack/medical/advanced/ointment = 90,
 	/obj/item/stack/medical/ointment = 50,
 	/obj/item/tape_roll = 30,
 	/obj/item/taperoll = 10
@@ -163,7 +164,8 @@
 /datum/surgery_step/repairflesh/repair_brute
 	surgery_name = "Repair Brute"
 	allowed_tools = list(
-	/obj/item/stack/medical/advanced/bruise_pack = 100,
+	/obj/item/surgical/hemostat = 100,
+	/obj/item/stack/medical/advanced/bruise_pack = 90,
 	/obj/item/stack/medical/bruise_pack = 50,
 	/obj/item/tape_roll = 40,
 	/obj/item/taperoll = 10
@@ -189,7 +191,7 @@
 	span_notice("You begin taping up [target]'s [affected] with \the [tool]."))
 		user.balloon_alert_visible("begins to tape up \the [affected].", "taping up \the [affected].")
 		affected.jostle_bone(10)
-	else if(istype(tool, /obj/item/surgical/FixOVein) || istype(tool, /obj/item/surgical/bonesetter))
+	else if(istype(tool, /obj/item/surgical/FixOVein) || istype(tool, /obj/item/surgical/bonesetter)|| istype(tool, /obj/item/surgical/hemostat))
 		user.visible_message(span_notice("[user] begins mending the torn tissue in [target]'s [affected] with \the [tool]."), \
 	span_notice("You begin mending the torn tissue in [target]'s [affected] with \the [tool]."))
 		user.balloon_alert_visible("begins mending torn tissue in \the [affected]", "mending torn issue in \the [affected]")
