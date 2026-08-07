@@ -450,7 +450,7 @@
 
 //Added sprites
 /datum/robot_sprite/dogborg/crisis/vale2
-	name = "Mediborg Model V-3"
+	name = "Valekin"
 	sprite_icon = 'icons/mob/robot/widerobot/widerobot.dmi'
 	sprite_icon_state = "vale2"
 	sprite_hud_icon_state = "medihound"
